@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using SonarCloud.NET.Client;
 using SonarCloud.NET.Extensions;
 using System.Net;
 using System.Text;
@@ -13,7 +12,7 @@ public class TestsHelper
         PropertyNamingPolicy = JsonNamingPolicy.CamelCase
     };
 
-    public static SonarCloudApiClient GetClient(HttpResponseMessage response)
+    public static ISonarCloudApiClient GetClient(HttpResponseMessage response)
     {
         var services = new ServiceCollection();
 
@@ -25,10 +24,10 @@ public class TestsHelper
 
         var provider = services.BuildServiceProvider();
 
-        return provider.GetRequiredService<SonarCloudApiClient>();
+        return provider.GetRequiredService<ISonarCloudApiClient>();
     }
 
-    public static SonarCloudApiClient GetClient(object responseObject, HttpStatusCode statusCode)
+    public static ISonarCloudApiClient GetClient(object responseObject, HttpStatusCode statusCode)
     {
         var jsonContent = JsonSerializer.Serialize(responseObject, options);
         var response = new HttpResponseMessage()

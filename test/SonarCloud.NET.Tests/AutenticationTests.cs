@@ -1,4 +1,3 @@
-using SonarCloud.NET.Client;
 using SonarCloud.NET.Helpers;
 using SonarCloud.NET.Tests.Helper;
 using System.Net;
@@ -20,7 +19,7 @@ public class AutenticationTests
 
             var client = TestsHelper.GetClient(response);
 
-            await client.Logout();
+            await client.Authentication.Logout();
         }
 
         [Fact]
@@ -34,7 +33,7 @@ public class AutenticationTests
 
             var client = TestsHelper.GetClient(response);
 
-            var request = () => client.Logout();
+            var request = () => client.Authentication.Logout();
 
             await request.Should().ThrowAsync<SonarCloudApiClientException>();
         }
@@ -53,7 +52,7 @@ public class AutenticationTests
 
             var client = TestsHelper.GetClient(response);
 
-            var result = await client.Validate();
+            var result = await client.Authentication.Validate();
 
             result.Should().BeTrue();
         }

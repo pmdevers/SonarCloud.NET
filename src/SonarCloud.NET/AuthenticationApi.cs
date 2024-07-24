@@ -1,19 +1,24 @@
-﻿using SonarCloud.NET.Client;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace SonarCloud.NET;
 
-public static class AuthenticationApi
+public interface IAuthenticationApi
+{
+    Task Logout(CancellationToken token = default);
+    Task<bool> Validate(CancellationToken token = default);
+}
+
+internal sealed class AuthenticationApi(SonarCloudApiClient client) : IAuthenticationApi
 {
     private const string endpoint = "api/authentication";
 
-    public static async Task Logout(this SonarCloudApiClient client, CancellationToken token = default)
+    public async Task Logout(CancellationToken token = default)
     {
         var response = await client.HttpClient.PostAsync($"{endpoint}/logout", null, token)!;
         SonarCloudApiClient.HandleErrors(response);
     }
 
-    public static async Task<bool> Validate(this SonarCloudApiClient client, CancellationToken token = default)
+    public async Task<bool> Validate(CancellationToken token = default)
     {
         var response = await client.HttpClient.GetAsync($"{endpoint}/validate", token);
         var result = await client.HandleResponseAsync<ValidateResponse>(response, token);

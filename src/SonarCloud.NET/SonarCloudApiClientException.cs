@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace SonarCloud.NET.Client;
+namespace SonarCloud.NET;
 public class SonarCloudApiClientException : Exception
 {
     public SonarCloudApiClientException()

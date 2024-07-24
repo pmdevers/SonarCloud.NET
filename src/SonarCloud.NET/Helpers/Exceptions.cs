@@ -1,5 +1,4 @@
 ﻿using System.Net;
-using SonarCloud.NET.Client;
 
 namespace SonarCloud.NET.Helpers;
 internal static class Exceptions

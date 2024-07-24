@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace SonarCloud.NET.Client;
+namespace SonarCloud.NET;
 
 public class SonarCloudApiClientOptions
 {
