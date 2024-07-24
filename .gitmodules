@@ -1,0 +1,3 @@
+[submodule "confluent-kafka-dotnet"]
+	path = confluent-kafka-dotnet
+	url = https://github.com/pmdevers/confluent-kafka-dotnet.git
