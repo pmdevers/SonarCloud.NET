@@ -4,14 +4,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D13190C5-74BA-45AC-B422-DB57ECFD4FC4}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{AD428EB2-B1E8-4447-8182-41A044D260E3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{81E6306B-9CDF-40F5-9C6B-5821ECE78E6C}"
-	ProjectSection(SolutionItems) = preProject
-		Directory.Build.props = Directory.Build.props
-		Directory.Packages.props = Directory.Packages.props
-	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SonarCloud.NET", "src\SonarCloud.NET\SonarCloud.NET.csproj", "{FE61F806-FD78-4213-A875-7287C61215ED}"
 EndProject
@@ -26,6 +24,12 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{230F554B-A7FF-4621-B642-223FD828AC28}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "example\Example.csproj", "{1C889D5C-402B-40A5-9229-2F183EE73D47}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{58919C80-FC47-4A85-B76A-8DE0B465A3C4}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,6 +58,7 @@ Global
 		{B479508A-55C5-4641-BFCB-9088ABFCDB84} = {AD428EB2-B1E8-4447-8182-41A044D260E3}
 		{4B37A783-852A-47DF-9E84-9216BDC09326} = {AD428EB2-B1E8-4447-8182-41A044D260E3}
 		{1C889D5C-402B-40A5-9229-2F183EE73D47} = {230F554B-A7FF-4621-B642-223FD828AC28}
+		{58919C80-FC47-4A85-B76A-8DE0B465A3C4} = {D13190C5-74BA-45AC-B422-DB57ECFD4FC4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {43EF37F1-EA63-4018-988D-1236C9D89AEC}
