@@ -26,13 +26,13 @@ This repository contains a .NET Core library for interacting with the SonarCloud
 To install the package, use the following command in your .NET Core project:
 
 ```bash
-dotnet add package SonarCloud.NET
+dotnet add package PMDEvers.SonarCloud.NET
 ```
 
 Alternatively, you can add it manually to your `.csproj` file:
 
 ```xml
-<PackageReference Include="SonarCloud.NET" Version="0.1.0" />
+<PackageReference Include="PMDEvers.SonarCloud.NET" Version="0.1.0" />
 ```
 
 ## Usage
@@ -45,28 +45,28 @@ First, initialize the `SonarCloudClient` with your SonarCloud token:
 
 ```csharp
 using SonarCloud.NET;
+using SonarCloud.NET.Extensions;
 
-var client = new SonarCloudClient("your-sonarcloud-token");
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddSonarCloudClient(o => {
+    o.AccessToken = "<sonarcloud-token-here>";
+});
+
 ```
 
-### Fetching Project Information
+### Listing Projects
 
 To fetch information about a specific project:
 
 ```csharp
-var project = await client.GetProjectAsync("project-key");
-Console.WriteLine($"Project Name: {project.Name}");
-```
+var result = await client.Projects.Search(new() { 
+    Organization = "my-org"
+    });
 
-### Listing Issues
-
-To list issues in a project:
-
-```csharp
-var issues = await client.GetIssuesAsync("project-key");
-foreach (var issue in issues)
+foreach(var project in result.Components) 
 {
-    Console.WriteLine($"Issue: {issue.Key} - {issue.Message}");
+    Console.WriteLine(project.Name);
 }
 ```
 
