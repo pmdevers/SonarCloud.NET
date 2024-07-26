@@ -13,21 +13,24 @@ public class TestsHelper
     };
 
     public static ISonarCloudApiClient GetClient(HttpResponseMessage response)
+        => GetClient(new FakeHttpMessageHandler(response));
+
+    public static ISonarCloudApiClient GetClient(DelegatingHandler handler)
     {
         var services = new ServiceCollection();
 
         services.AddSonarCloudClient(opt =>
         {
             opt.AccessToken = "TEST";
-            
-        }).AddHttpMessageHandler(() => new FakeHttpMessageHandler(response));
+
+        }).AddHttpMessageHandler(x => handler);
 
         var provider = services.BuildServiceProvider();
 
         return provider.GetRequiredService<ISonarCloudApiClient>();
     }
 
-    public static ISonarCloudApiClient GetClient(object responseObject, HttpStatusCode statusCode)
+    public static ISonarCloudApiClient GetClient<T>(T responseObject, HttpStatusCode statusCode)
     {
         var jsonContent = JsonSerializer.Serialize(responseObject, options);
         var response = new HttpResponseMessage()

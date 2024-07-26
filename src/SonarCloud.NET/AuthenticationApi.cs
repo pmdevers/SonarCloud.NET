@@ -12,19 +12,11 @@ internal sealed class AuthenticationApi(SonarCloudApiClient client) : IAuthentic
 {
     private const string endpoint = "api/authentication";
 
-    public async Task Logout(CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsync($"{endpoint}/logout", null, token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
+    public Task Logout(CancellationToken token = default)
+        => client.Post($"{endpoint}/logout", token);
 
     public async Task<bool> Validate(CancellationToken token = default)
-    {
-        var response = await client.HttpClient.GetAsync($"{endpoint}/validate", token);
-        var result = await client.HandleResponseAsync<ValidateResponse>(response, token);
-        return result.Valid;
-    }
-
+        => (await client.Get<ValidateResponse>($"{endpoint}/validate", token)).Valid;
     private sealed class ValidateResponse
     {
         [JsonPropertyName("valid")]

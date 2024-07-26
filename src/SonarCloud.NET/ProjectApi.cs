@@ -32,39 +32,26 @@ public class BulkDeleteRequest
     [QueryString("q")]
     public string? Query { get; set; }
 }
-public enum NewCodeDefinitionTypes
-{
-    previous_version,
-    days,
-    date,
-    version
-}
 
-public enum ProjectVisibility
-{
-    @private,
-    @public
-}
 public class CreateProjectsRequest
 {
+    [QueryString("organization")]
+    public required string Organization { get; set; }
+
+    [QueryString("project")]
+    public required string Project { get; set; }
 
     [QueryString("name")]
     public required string Name { get; set; }
 
     [QueryString("newCodeDefinitionType")]
-    public NewCodeDefinitionTypes? NewCodeDefinitionType { get; }
+    public string? NewCodeDefinitionType { get; }
 
     [QueryString("newCodeDefinitionValue")]
     public string? NewCodeDefinitionValue { get; }
 
-    [QueryString("organization")]
-    public required string Organization { get; set; }
-
-    [QueryString("projects")]
-    public string? Projects { get; set; }
-
     [QueryString("visibility")]
-    public ProjectVisibility? Visibility { get; set; }
+    public string? Visibility { get; set; }
 }
 public class UpdateVisibilityRequest
 {
@@ -72,7 +59,7 @@ public class UpdateVisibilityRequest
     public required string Projects { get; set; }
     
     [QueryString("visibility")]
-    public required ProjectVisibility Visibility { get; set; }
+    public required string Visibility { get; set; }
 }
 
 public class UpdateKeyRequest
@@ -102,52 +89,47 @@ public class CreateProjectsResponse
 
 public class SearchProjectsRequest
 {
+    [QueryString("analyzedBefore")]
+    public DateTime? AnalyzedBefore { get;set; }
+
+    [QueryString("onProvisionedOnly")]
+    public bool? OnProvisionedOnly { get; set; }
+
+    [QueryString("organization")]
+    public required string Organization { get; set; }
+
+    [QueryString("p")]
+    public int? Page { get; set; }
+
+    [QueryString("projects")]
+    public string? Projects { get; set; }
+
     [QueryString("ps")]
-    public int PageSize { get; set; } = 100;
+    public int? PageSize { get; set; }
 
     [QueryString("q")]
     public string? Query { get; set; }
 }
 
-internal sealed class ProjectApi(SonarCloudApiClient client) : IProjectsApi
+internal sealed class ProjectsApi(SonarCloudApiClient client) : IProjectsApi
 {
     private const string endpoint = "api/projects";
 
-    public async Task BulkDelete(BulkDeleteRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/bulk_delete" + QueryString.ToQueryString(request), token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
+    public Task BulkDelete(BulkDeleteRequest request, CancellationToken token = default)
+        => client.Post($"{endpoint}/bulk_delete", request, token);
 
-    public async Task<CreateProjectsResponse> Create(CreateProjectsRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/create" + QueryString.ToQueryString(request), token);
-        var result = await client.HandleResponseAsync<CreateProjectsResponse>(response, token);
-        return result;
-    }
+    public Task<CreateProjectsResponse> Create(CreateProjectsRequest request, CancellationToken token = default)
+        => client.Post<CreateProjectsRequest, CreateProjectsResponse>($"{endpoint}/create", request, token);
 
-    public async Task Delete(DeleteProjectsRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/bulk_delete" + QueryString.ToQueryString(request), token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
+    public Task Delete(DeleteProjectsRequest request, CancellationToken token = default)
+        => client.Post($"{endpoint}/bulk_delete", request, token);
 
-    public async Task<SearchProjectsResponse> Search(SearchProjectsRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/search" + QueryString.ToQueryString(request), token);
-        var result = await client.HandleResponseAsync<SearchProjectsResponse>(response, token);
-        return result;
-    }
+    public Task<SearchProjectsResponse> Search(SearchProjectsRequest request, CancellationToken token = default)
+        => client.Get<SearchProjectsRequest, SearchProjectsResponse>($"{endpoint}/search", request, token);
+    
+    public Task UpdateKey(UpdateKeyRequest request, CancellationToken token = default)
+        => client.Post($"{endpoint}/update_key", request, token);
 
-    public async Task UpdateKey(UpdateKeyRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/update_key" + QueryString.ToQueryString(request), token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
-
-    public async Task UpdateVisibility(UpdateVisibilityRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/update_visibility" + QueryString.ToQueryString(request), token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
+    public Task UpdateVisibility(UpdateVisibilityRequest request, CancellationToken token = default)
+        => client.Post($"{endpoint}/update_visibility", request, token);
 }

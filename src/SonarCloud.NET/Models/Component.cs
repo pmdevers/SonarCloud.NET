@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace SonarCloud.NET.Models;
 
@@ -18,12 +13,13 @@ public class Project
     [JsonPropertyName("qualifier")]
     public required string Qualifier { get; set; }
     [JsonPropertyName("visibility")]
-    public ProjectVisibility? Visibility { get; set; }
+    public string? Visibility { get; set; }
     [JsonPropertyName("lastAnalysisDate")]
-    public DateTime? LastAnalysisDate { get; set; }
+    public string? LastAnalysisDate { get; set; }
 
     [JsonPropertyName("revision")]
     public string? Revision { get; set; }
+
     public static Project Empty => new() {
         Key = string.Empty, 
         Name = string.Empty, 

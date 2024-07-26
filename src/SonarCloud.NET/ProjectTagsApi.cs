@@ -37,16 +37,9 @@ public class SearchProjectTagsRequest
 internal sealed class ProjectTagsApi(SonarCloudApiClient client) : IProjectTagsApi
 {
     private const string endpoint = "api/project_tags";
-    public async Task<SearchProjectTagsResponse> Search(SearchProjectTagsRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/search" + QueryString.ToQueryString(request), token);
-        var result = await client.HandleResponseAsync<SearchProjectTagsResponse>(response, token);
-        return result;
-    }
+    public Task<SearchProjectTagsResponse> Search(SearchProjectTagsRequest request, CancellationToken token = default)
+        => client.Get<SearchProjectTagsRequest, SearchProjectTagsResponse>($"{endpoint}/search", request, token);
 
-    public async Task SetTags(SetProjectTagsRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.PostAsJsonAsync($"{endpoint}/set" + QueryString.ToQueryString(request), token)!;
-        SonarCloudApiClient.HandleErrors(response);
-    }
+    public Task SetTags(SetProjectTagsRequest request, CancellationToken token = default)
+        => client.Post($"{endpoint}/set", request, token);
 }

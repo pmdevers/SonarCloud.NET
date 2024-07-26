@@ -14,11 +14,6 @@ internal sealed class ComputeEngineApi(SonarCloudApiClient client) : IComputeEng
 {
     public const string Endpoint = "/api/ce";
 
-    public async Task<SearchForTasksResponse> Search(SearchForTasksRequest request, CancellationToken token = default)
-    {
-        var response = await client.HttpClient.GetAsync($"{Endpoint}/activity" + QueryString.ToQueryString(request), token);
-        var result = await client.HandleResponseAsync<SearchForTasksResponse>(response, token);
-        return result;
-    }
-
+    public Task<SearchForTasksResponse> Search(SearchForTasksRequest request, CancellationToken token = default)
+        => client.Get<SearchForTasksRequest, SearchForTasksResponse>($"{Endpoint}/activity", request, token);
 }

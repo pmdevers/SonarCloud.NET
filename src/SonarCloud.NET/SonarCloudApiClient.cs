@@ -2,7 +2,9 @@
 using Microsoft.Extensions.Logging.Abstractions;
 using SonarCloud.NET.Extensions;
 using SonarCloud.NET.Helpers;
+using System.Net;
 using System.Text.Json;
+using System.Threading;
 
 namespace SonarCloud.NET;
 
@@ -23,12 +25,45 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IAuthenticationApi Authentication => new AuthenticationApi(this);
     public IComputeEngineApi ComputeEngine => new ComputeEngineApi(this);
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
-    public IProjectsApi Projects => new ProjectApi(this);
+    public IProjectsApi Projects => new ProjectsApi(this);
+
+
+    public async Task<TResponse> Post<TRequest, TResponse>(string url, TRequest request, CancellationToken token = default)
+    {
+        var content = new FormUrlEncodedContent(QueryString.ToNameValueCollection(request));
+        var response = await HttpClient.PostAsync(url, content, token)!;
+        return await HandleResponseAsync<TResponse>(response, token);
+    }
+
+    public async Task Post<TRequest>(string url, TRequest request, CancellationToken cancellationToken = default)
+    {
+        var content = new FormUrlEncodedContent(QueryString.ToNameValueCollection(request));
+        var response = await HttpClient.PostAsync(url, content, cancellationToken);
+        await HandleErrors(response, cancellationToken);
+    }
+
+    public async Task Post(string url, CancellationToken cancellationToken = default)
+    {
+        var response = await HttpClient.PostAsync(url, null, cancellationToken);
+        await HandleErrors(response, cancellationToken);
+    }
+
+    public async Task<TResponse> Get<TRequest, TResponse>(string url, TRequest request, CancellationToken cancellationToken = default)
+    {
+        var response = await HttpClient.GetAsync(url + QueryString.AsQueryString(request), cancellationToken);
+        return await HandleResponseAsync<TResponse>(response, cancellationToken);
+    }
+
+    public async Task<TResponse> Get<TResponse>(string url, CancellationToken cancellationToken = default)
+    {
+        var response = await HttpClient.GetAsync(url, cancellationToken);
+        return await HandleResponseAsync<TResponse>(response, cancellationToken);
+    }
 
     internal async Task<T> HandleResponseAsync<T>(HttpResponseMessage response, CancellationToken cancellationToken = default)
     {
         cancellationToken.ThrowIfCancellationRequested();
-        HandleErrors(response);
+        await HandleErrors(response, cancellationToken);
         var result = await ReadContent<T>(response, cancellationToken);
         return result ?? throw Exceptions.EmptyResponse();
     }
@@ -46,11 +81,17 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
             throw;
         }
     }
-    internal static void HandleErrors(HttpResponseMessage response)
+    internal static async Task HandleErrors(HttpResponseMessage response, CancellationToken cancellationToken = default)
     {
+        cancellationToken.ThrowIfCancellationRequested();
+
         if (response.IsSuccessStatusCode)
             return;
 
-        throw Exceptions.HttpErrorResponse(response.StatusCode, "Unknown error.");
+        var stream = await response.Content.ReadAsStreamAsync(cancellationToken);
+        using var sr = new StreamReader(stream);
+        var message = await sr.ReadToEndAsync(cancellationToken);
+
+        throw Exceptions.HttpErrorResponse(response.StatusCode, message);
     }
 }

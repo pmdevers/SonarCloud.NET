@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.Json.Serialization;
-using System.Threading.Tasks;
+﻿using System.Text.Json.Serialization;
 
 namespace SonarCloud.NET.Models;
 public class Paged<T>
 {
+    [JsonPropertyName("paging")]
     public Paging Paging { get; set; } = new();
+    [JsonPropertyName("components")]
     public List<T> Components { get; set; } = []; 
 }
 
