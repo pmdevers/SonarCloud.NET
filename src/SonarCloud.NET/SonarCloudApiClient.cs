@@ -12,6 +12,9 @@ public interface ISonarCloudApiClient
 {
     IAuthenticationApi Authentication { get; }
     IComputeEngineApi ComputeEngine { get; }
+    IComponentsApi Components { get; }
+    IDuplicationsApi Duplications { get; }
+    IFavoritesApi Favorites { get; }
     IProjectTagsApi ProjectTags { get; }
     IProjectsApi Projects { get; }
 }
@@ -24,8 +27,12 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public ILogger Logger { get; } = logger ?? NullLogger<SonarCloudApiClient>.Instance;
     public IAuthenticationApi Authentication => new AuthenticationApi(this);
     public IComputeEngineApi ComputeEngine => new ComputeEngineApi(this);
+    public IComponentsApi Components => new ComponentsApi(this);
+    public IDuplicationsApi Duplications => new DuplicationsApi(this);
+    public IFavoritesApi Favorites => new FavoritesApi(this);
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
     public IProjectsApi Projects => new ProjectsApi(this);
+
 
 
     public async Task<TResponse> Post<TRequest, TResponse>(string url, TRequest request, CancellationToken token = default)

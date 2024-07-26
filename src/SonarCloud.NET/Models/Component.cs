@@ -1,28 +1,16 @@
 ﻿using System.Text.Json.Serialization;
 
 namespace SonarCloud.NET.Models;
-
-public class Project
+public class Component
 {
     [JsonPropertyName("organization")]
-    public string? Organization { get; set; }
+    public string Organization { get; set; } = string.Empty;
     [JsonPropertyName("key")]
-    public required string Key { get; set; }
-    [JsonPropertyName("name")]
-    public required string Name { get; set; }
+    public string Key { get; set; } = string.Empty;
     [JsonPropertyName("qualifier")]
-    public required string Qualifier { get; set; }
-    [JsonPropertyName("visibility")]
-    public string? Visibility { get; set; }
-    [JsonPropertyName("lastAnalysisDate")]
-    public string? LastAnalysisDate { get; set; }
-
-    [JsonPropertyName("revision")]
-    public string? Revision { get; set; }
-
-    public static Project Empty => new() {
-        Key = string.Empty, 
-        Name = string.Empty, 
-        Qualifier = string.Empty
-        };
+    public string Qualifier { get; set; } = string.Empty;
+    [JsonPropertyName("name")]
+    public string Name { get; set; } = string.Empty;
+    [JsonPropertyName("project")]
+    public string Project { get; set; } = string.Empty;
 }
