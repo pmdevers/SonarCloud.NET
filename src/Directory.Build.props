@@ -7,7 +7,7 @@
     <Nullable>enable</Nullable>
     <IsPackable>true</IsPackable>
     <CompanyName>PMDEvers</CompanyName>
-    <ProjectName>CloudClient.NET</ProjectName>
+    <ProjectName>SonarCloud.NET</ProjectName>
 
     <Version>0.0.1</Version>
 
