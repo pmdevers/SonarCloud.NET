@@ -1,5 +1,14 @@
 # SonarCloud API Client for .NET Core
 
+![Github Release](https://img.shields.io/github/v/release/pmdevers/SonarCloud.NET) 
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/pmdevers/SonarCloud.NET/.github%2Fworkflows%2Fbuild-publish.yml) 
+![GitHub License](https://img.shields.io/github/license/pmdevers/SonarCloud.NET) 
+![Github Issues Open](https://img.shields.io/github/issues/pmdevers/SonarCloud.NET) 
+![Github Pull Request Open](https://img.shields.io/github/issues-pr/pmdevers/SonarCloud.NET) 
+[![Scheduled Code Security Testing](https://github.com/pmdevers/SonarCloud.NET/actions/workflows/security-analysis.yml/badge.svg?event=schedule)](https://github.com/pmdevers/SonarCloud.NET/actions/workflows/security-analysis.yml)
+
+
+
 This repository contains a .NET Core library for interacting with the SonarCloud API. The library wraps the API endpoints and provides a strongly-typed, easy-to-use interface for making API calls from your .NET applications.
 
 ![Alt text](/assets/sonar-dark.png "SonarCloud logo")
