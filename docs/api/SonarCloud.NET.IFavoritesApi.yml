@@ -1,0 +1,333 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.IFavoritesApi
+  commentId: T:SonarCloud.NET.IFavoritesApi
+  id: IFavoritesApi
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.IFavoritesApi.Add(SonarCloud.NET.FavoritesAddRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IFavoritesApi.Remove(SonarCloud.NET.FavoritesRemoveRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IFavoritesApi.Search(SonarCloud.NET.FavoritesSearchRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IFavoritesApi
+  nameWithType: IFavoritesApi
+  fullName: SonarCloud.NET.IFavoritesApi
+  type: Interface
+  source:
+    remote:
+      path: src/SonarCloud.NET/FavoritesApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: IFavoritesApi
+    path: src/SonarCloud.NET/FavoritesApi.cs
+    startLine: 6
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public interface IFavoritesApi
+    content.vb: Public Interface IFavoritesApi
+- uid: SonarCloud.NET.IFavoritesApi.Add(SonarCloud.NET.FavoritesAddRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IFavoritesApi.Add(SonarCloud.NET.FavoritesAddRequest,System.Threading.CancellationToken)
+  id: Add(SonarCloud.NET.FavoritesAddRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IFavoritesApi
+  langs:
+  - csharp
+  - vb
+  name: Add(FavoritesAddRequest, CancellationToken)
+  nameWithType: IFavoritesApi.Add(FavoritesAddRequest, CancellationToken)
+  fullName: SonarCloud.NET.IFavoritesApi.Add(SonarCloud.NET.FavoritesAddRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/FavoritesApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Add
+    path: src/SonarCloud.NET/FavoritesApi.cs
+    startLine: 8
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task Add(FavoritesAddRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.FavoritesAddRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Add(request As FavoritesAddRequest, cancellationToken As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IFavoritesApi.Add*
+- uid: SonarCloud.NET.IFavoritesApi.Remove(SonarCloud.NET.FavoritesRemoveRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IFavoritesApi.Remove(SonarCloud.NET.FavoritesRemoveRequest,System.Threading.CancellationToken)
+  id: Remove(SonarCloud.NET.FavoritesRemoveRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IFavoritesApi
+  langs:
+  - csharp
+  - vb
+  name: Remove(FavoritesRemoveRequest, CancellationToken)
+  nameWithType: IFavoritesApi.Remove(FavoritesRemoveRequest, CancellationToken)
+  fullName: SonarCloud.NET.IFavoritesApi.Remove(SonarCloud.NET.FavoritesRemoveRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/FavoritesApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Remove
+    path: src/SonarCloud.NET/FavoritesApi.cs
+    startLine: 9
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task Remove(FavoritesRemoveRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.FavoritesRemoveRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Remove(request As FavoritesRemoveRequest, cancellationToken As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IFavoritesApi.Remove*
+- uid: SonarCloud.NET.IFavoritesApi.Search(SonarCloud.NET.FavoritesSearchRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IFavoritesApi.Search(SonarCloud.NET.FavoritesSearchRequest,System.Threading.CancellationToken)
+  id: Search(SonarCloud.NET.FavoritesSearchRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IFavoritesApi
+  langs:
+  - csharp
+  - vb
+  name: Search(FavoritesSearchRequest, CancellationToken)
+  nameWithType: IFavoritesApi.Search(FavoritesSearchRequest, CancellationToken)
+  fullName: SonarCloud.NET.IFavoritesApi.Search(SonarCloud.NET.FavoritesSearchRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/FavoritesApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Search
+    path: src/SonarCloud.NET/FavoritesApi.cs
+    startLine: 10
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<FavoritesSearchResponse> Search(FavoritesSearchRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.FavoritesSearchRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.FavoritesSearchResponse}
+    content.vb: Function Search(request As FavoritesSearchRequest, cancellationToken As CancellationToken = Nothing) As Task(Of FavoritesSearchResponse)
+  overload: SonarCloud.NET.IFavoritesApi.Search*
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: SonarCloud.NET.IFavoritesApi.Add*
+  commentId: Overload:SonarCloud.NET.IFavoritesApi.Add
+  href: SonarCloud.NET.IFavoritesApi.html#SonarCloud_NET_IFavoritesApi_Add_SonarCloud_NET_FavoritesAddRequest_System_Threading_CancellationToken_
+  name: Add
+  nameWithType: IFavoritesApi.Add
+  fullName: SonarCloud.NET.IFavoritesApi.Add
+- uid: SonarCloud.NET.FavoritesAddRequest
+  commentId: T:SonarCloud.NET.FavoritesAddRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.FavoritesAddRequest.html
+  name: FavoritesAddRequest
+  nameWithType: FavoritesAddRequest
+  fullName: SonarCloud.NET.FavoritesAddRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SonarCloud.NET.IFavoritesApi.Remove*
+  commentId: Overload:SonarCloud.NET.IFavoritesApi.Remove
+  href: SonarCloud.NET.IFavoritesApi.html#SonarCloud_NET_IFavoritesApi_Remove_SonarCloud_NET_FavoritesRemoveRequest_System_Threading_CancellationToken_
+  name: Remove
+  nameWithType: IFavoritesApi.Remove
+  fullName: SonarCloud.NET.IFavoritesApi.Remove
+- uid: SonarCloud.NET.FavoritesRemoveRequest
+  commentId: T:SonarCloud.NET.FavoritesRemoveRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.FavoritesRemoveRequest.html
+  name: FavoritesRemoveRequest
+  nameWithType: FavoritesRemoveRequest
+  fullName: SonarCloud.NET.FavoritesRemoveRequest
+- uid: SonarCloud.NET.IFavoritesApi.Search*
+  commentId: Overload:SonarCloud.NET.IFavoritesApi.Search
+  href: SonarCloud.NET.IFavoritesApi.html#SonarCloud_NET_IFavoritesApi_Search_SonarCloud_NET_FavoritesSearchRequest_System_Threading_CancellationToken_
+  name: Search
+  nameWithType: IFavoritesApi.Search
+  fullName: SonarCloud.NET.IFavoritesApi.Search
+- uid: SonarCloud.NET.FavoritesSearchRequest
+  commentId: T:SonarCloud.NET.FavoritesSearchRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.FavoritesSearchRequest.html
+  name: FavoritesSearchRequest
+  nameWithType: FavoritesSearchRequest
+  fullName: SonarCloud.NET.FavoritesSearchRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.FavoritesSearchResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.FavoritesSearchResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<FavoritesSearchResponse>
+  nameWithType: Task<FavoritesSearchResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.FavoritesSearchResponse>
+  nameWithType.vb: Task(Of FavoritesSearchResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.FavoritesSearchResponse)
+  name.vb: Task(Of FavoritesSearchResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.FavoritesSearchResponse
+    name: FavoritesSearchResponse
+    href: SonarCloud.NET.FavoritesSearchResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.FavoritesSearchResponse
+    name: FavoritesSearchResponse
+    href: SonarCloud.NET.FavoritesSearchResponse.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

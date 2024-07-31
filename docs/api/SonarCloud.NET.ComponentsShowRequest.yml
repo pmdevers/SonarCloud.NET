@@ -1,0 +1,792 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.ComponentsShowRequest
+  commentId: T:SonarCloud.NET.ComponentsShowRequest
+  id: ComponentsShowRequest
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.ComponentsShowRequest.Branch
+  - SonarCloud.NET.ComponentsShowRequest.Component
+  - SonarCloud.NET.ComponentsShowRequest.PageNumber
+  - SonarCloud.NET.ComponentsShowRequest.PageSize
+  - SonarCloud.NET.ComponentsShowRequest.PullRequest
+  - SonarCloud.NET.ComponentsShowRequest.Qualifiers
+  - SonarCloud.NET.ComponentsShowRequest.Query
+  - SonarCloud.NET.ComponentsShowRequest.SortFields
+  - SonarCloud.NET.ComponentsShowRequest.Strategy
+  langs:
+  - csharp
+  - vb
+  name: ComponentsShowRequest
+  nameWithType: ComponentsShowRequest
+  fullName: SonarCloud.NET.ComponentsShowRequest
+  type: Class
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: ComponentsShowRequest
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 34
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public class ComponentsShowRequest
+    content.vb: Public Class ComponentsShowRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SonarCloud.NET.ComponentsShowRequest.Branch
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.Branch
+  id: Branch
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: Branch
+  nameWithType: ComponentsShowRequest.Branch
+  fullName: SonarCloud.NET.ComponentsShowRequest.Branch
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Branch
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 36
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("branch")]
+
+      public string? Branch { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("branch")>
+
+      Public Property Branch As String
+  overload: SonarCloud.NET.ComponentsShowRequest.Branch*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: branch
+- uid: SonarCloud.NET.ComponentsShowRequest.Component
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.Component
+  id: Component
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: Component
+  nameWithType: ComponentsShowRequest.Component
+  fullName: SonarCloud.NET.ComponentsShowRequest.Component
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Component
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 39
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("component")]
+
+      public required string Component { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("component")>
+
+      Public Property Component As String
+  overload: SonarCloud.NET.ComponentsShowRequest.Component*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: component
+- uid: SonarCloud.NET.ComponentsShowRequest.PageNumber
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.PageNumber
+  id: PageNumber
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: PageNumber
+  nameWithType: ComponentsShowRequest.PageNumber
+  fullName: SonarCloud.NET.ComponentsShowRequest.PageNumber
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: PageNumber
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 42
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("p")]
+
+      public int? PageNumber { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <QueryString("p")>
+
+      Public Property PageNumber As Integer?
+  overload: SonarCloud.NET.ComponentsShowRequest.PageNumber*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: p
+- uid: SonarCloud.NET.ComponentsShowRequest.PageSize
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.PageSize
+  id: PageSize
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: ComponentsShowRequest.PageSize
+  fullName: SonarCloud.NET.ComponentsShowRequest.PageSize
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: PageSize
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 45
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("ps")]
+
+      public int? PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <QueryString("ps")>
+
+      Public Property PageSize As Integer?
+  overload: SonarCloud.NET.ComponentsShowRequest.PageSize*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ps
+- uid: SonarCloud.NET.ComponentsShowRequest.PullRequest
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.PullRequest
+  id: PullRequest
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: PullRequest
+  nameWithType: ComponentsShowRequest.PullRequest
+  fullName: SonarCloud.NET.ComponentsShowRequest.PullRequest
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: PullRequest
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 48
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("pullRequest")]
+
+      public string? PullRequest { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("pullRequest")>
+
+      Public Property PullRequest As String
+  overload: SonarCloud.NET.ComponentsShowRequest.PullRequest*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: pullRequest
+- uid: SonarCloud.NET.ComponentsShowRequest.Query
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.Query
+  id: Query
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: ComponentsShowRequest.Query
+  fullName: SonarCloud.NET.ComponentsShowRequest.Query
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Query
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 51
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("q")]
+
+      public string? Query { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("q")>
+
+      Public Property Query As String
+  overload: SonarCloud.NET.ComponentsShowRequest.Query*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: q
+- uid: SonarCloud.NET.ComponentsShowRequest.Qualifiers
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.Qualifiers
+  id: Qualifiers
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: Qualifiers
+  nameWithType: ComponentsShowRequest.Qualifiers
+  fullName: SonarCloud.NET.ComponentsShowRequest.Qualifiers
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Qualifiers
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 54
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("qualifiers")]
+
+      public string? Qualifiers { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("qualifiers")>
+
+      Public Property Qualifiers As String
+  overload: SonarCloud.NET.ComponentsShowRequest.Qualifiers*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: qualifiers
+- uid: SonarCloud.NET.ComponentsShowRequest.SortFields
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.SortFields
+  id: SortFields
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: SortFields
+  nameWithType: ComponentsShowRequest.SortFields
+  fullName: SonarCloud.NET.ComponentsShowRequest.SortFields
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: SortFields
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 57
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("s")]
+
+      public string? SortFields { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("s")>
+
+      Public Property SortFields As String
+  overload: SonarCloud.NET.ComponentsShowRequest.SortFields*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: s
+- uid: SonarCloud.NET.ComponentsShowRequest.Strategy
+  commentId: P:SonarCloud.NET.ComponentsShowRequest.Strategy
+  id: Strategy
+  parent: SonarCloud.NET.ComponentsShowRequest
+  langs:
+  - csharp
+  - vb
+  name: Strategy
+  nameWithType: ComponentsShowRequest.Strategy
+  fullName: SonarCloud.NET.ComponentsShowRequest.Strategy
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComponentsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Strategy
+    path: src/SonarCloud.NET/ComponentsApi.cs
+    startLine: 60
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("strategy")]
+
+      public string? Strategy { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("strategy")>
+
+      Public Property Strategy As String
+  overload: SonarCloud.NET.ComponentsShowRequest.Strategy*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: strategy
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SonarCloud.NET.ComponentsShowRequest.Branch*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.Branch
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_Branch
+  name: Branch
+  nameWithType: ComponentsShowRequest.Branch
+  fullName: SonarCloud.NET.ComponentsShowRequest.Branch
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SonarCloud.NET.ComponentsShowRequest.Component*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.Component
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_Component
+  name: Component
+  nameWithType: ComponentsShowRequest.Component
+  fullName: SonarCloud.NET.ComponentsShowRequest.Component
+- uid: SonarCloud.NET.ComponentsShowRequest.PageNumber*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.PageNumber
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_PageNumber
+  name: PageNumber
+  nameWithType: ComponentsShowRequest.PageNumber
+  fullName: SonarCloud.NET.ComponentsShowRequest.PageNumber
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SonarCloud.NET.ComponentsShowRequest.PageSize*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.PageSize
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_PageSize
+  name: PageSize
+  nameWithType: ComponentsShowRequest.PageSize
+  fullName: SonarCloud.NET.ComponentsShowRequest.PageSize
+- uid: SonarCloud.NET.ComponentsShowRequest.PullRequest*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.PullRequest
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_PullRequest
+  name: PullRequest
+  nameWithType: ComponentsShowRequest.PullRequest
+  fullName: SonarCloud.NET.ComponentsShowRequest.PullRequest
+- uid: SonarCloud.NET.ComponentsShowRequest.Query*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.Query
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_Query
+  name: Query
+  nameWithType: ComponentsShowRequest.Query
+  fullName: SonarCloud.NET.ComponentsShowRequest.Query
+- uid: SonarCloud.NET.ComponentsShowRequest.Qualifiers*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.Qualifiers
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_Qualifiers
+  name: Qualifiers
+  nameWithType: ComponentsShowRequest.Qualifiers
+  fullName: SonarCloud.NET.ComponentsShowRequest.Qualifiers
+- uid: SonarCloud.NET.ComponentsShowRequest.SortFields*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.SortFields
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_SortFields
+  name: SortFields
+  nameWithType: ComponentsShowRequest.SortFields
+  fullName: SonarCloud.NET.ComponentsShowRequest.SortFields
+- uid: SonarCloud.NET.ComponentsShowRequest.Strategy*
+  commentId: Overload:SonarCloud.NET.ComponentsShowRequest.Strategy
+  href: SonarCloud.NET.ComponentsShowRequest.html#SonarCloud_NET_ComponentsShowRequest_Strategy
+  name: Strategy
+  nameWithType: ComponentsShowRequest.Strategy
+  fullName: SonarCloud.NET.ComponentsShowRequest.Strategy

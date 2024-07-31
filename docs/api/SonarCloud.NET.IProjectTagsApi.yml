@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.IProjectTagsApi
+  commentId: T:SonarCloud.NET.IProjectTagsApi
+  id: IProjectTagsApi
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.IProjectTagsApi.Search(SonarCloud.NET.SearchProjectTagsRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectTagsApi.SetTags(SonarCloud.NET.SetProjectTagsRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProjectTagsApi
+  nameWithType: IProjectTagsApi
+  fullName: SonarCloud.NET.IProjectTagsApi
+  type: Interface
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectTagsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: IProjectTagsApi
+    path: src/SonarCloud.NET/ProjectTagsApi.cs
+    startLine: 6
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public interface IProjectTagsApi
+    content.vb: Public Interface IProjectTagsApi
+- uid: SonarCloud.NET.IProjectTagsApi.Search(SonarCloud.NET.SearchProjectTagsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectTagsApi.Search(SonarCloud.NET.SearchProjectTagsRequest,System.Threading.CancellationToken)
+  id: Search(SonarCloud.NET.SearchProjectTagsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectTagsApi
+  langs:
+  - csharp
+  - vb
+  name: Search(SearchProjectTagsRequest, CancellationToken)
+  nameWithType: IProjectTagsApi.Search(SearchProjectTagsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectTagsApi.Search(SonarCloud.NET.SearchProjectTagsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectTagsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Search
+    path: src/SonarCloud.NET/ProjectTagsApi.cs
+    startLine: 8
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<SearchProjectTagsResponse> Search(SearchProjectTagsRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.SearchProjectTagsRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectTagsResponse}
+    content.vb: Function Search(request As SearchProjectTagsRequest, token As CancellationToken = Nothing) As Task(Of SearchProjectTagsResponse)
+  overload: SonarCloud.NET.IProjectTagsApi.Search*
+- uid: SonarCloud.NET.IProjectTagsApi.SetTags(SonarCloud.NET.SetProjectTagsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectTagsApi.SetTags(SonarCloud.NET.SetProjectTagsRequest,System.Threading.CancellationToken)
+  id: SetTags(SonarCloud.NET.SetProjectTagsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectTagsApi
+  langs:
+  - csharp
+  - vb
+  name: SetTags(SetProjectTagsRequest, CancellationToken)
+  nameWithType: IProjectTagsApi.SetTags(SetProjectTagsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectTagsApi.SetTags(SonarCloud.NET.SetProjectTagsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectTagsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: SetTags
+    path: src/SonarCloud.NET/ProjectTagsApi.cs
+    startLine: 9
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task SetTags(SetProjectTagsRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.SetProjectTagsRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetTags(request As SetProjectTagsRequest, token As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IProjectTagsApi.SetTags*
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: SonarCloud.NET.IProjectTagsApi.Search*
+  commentId: Overload:SonarCloud.NET.IProjectTagsApi.Search
+  href: SonarCloud.NET.IProjectTagsApi.html#SonarCloud_NET_IProjectTagsApi_Search_SonarCloud_NET_SearchProjectTagsRequest_System_Threading_CancellationToken_
+  name: Search
+  nameWithType: IProjectTagsApi.Search
+  fullName: SonarCloud.NET.IProjectTagsApi.Search
+- uid: SonarCloud.NET.SearchProjectTagsRequest
+  commentId: T:SonarCloud.NET.SearchProjectTagsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.SearchProjectTagsRequest.html
+  name: SearchProjectTagsRequest
+  nameWithType: SearchProjectTagsRequest
+  fullName: SonarCloud.NET.SearchProjectTagsRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectTagsResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectTagsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SearchProjectTagsResponse>
+  nameWithType: Task<SearchProjectTagsResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.SearchProjectTagsResponse>
+  nameWithType.vb: Task(Of SearchProjectTagsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.SearchProjectTagsResponse)
+  name.vb: Task(Of SearchProjectTagsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.SearchProjectTagsResponse
+    name: SearchProjectTagsResponse
+    href: SonarCloud.NET.SearchProjectTagsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.SearchProjectTagsResponse
+    name: SearchProjectTagsResponse
+    href: SonarCloud.NET.SearchProjectTagsResponse.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SonarCloud.NET.IProjectTagsApi.SetTags*
+  commentId: Overload:SonarCloud.NET.IProjectTagsApi.SetTags
+  href: SonarCloud.NET.IProjectTagsApi.html#SonarCloud_NET_IProjectTagsApi_SetTags_SonarCloud_NET_SetProjectTagsRequest_System_Threading_CancellationToken_
+  name: SetTags
+  nameWithType: IProjectTagsApi.SetTags
+  fullName: SonarCloud.NET.IProjectTagsApi.SetTags
+- uid: SonarCloud.NET.SetProjectTagsRequest
+  commentId: T:SonarCloud.NET.SetProjectTagsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.SetProjectTagsRequest.html
+  name: SetProjectTagsRequest
+  nameWithType: SetProjectTagsRequest
+  fullName: SonarCloud.NET.SetProjectTagsRequest
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.Extensions
+  commentId: N:SonarCloud.NET.Extensions
+  id: SonarCloud.NET.Extensions
+  children:
+  - SonarCloud.NET.Extensions.ServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: SonarCloud.NET.Extensions
+  nameWithType: SonarCloud.NET.Extensions
+  fullName: SonarCloud.NET.Extensions
+  type: Namespace
+  assemblies:
+  - SonarCloud.NET
+references:
+- uid: SonarCloud.NET.Extensions.ServiceCollectionExtensions
+  commentId: T:SonarCloud.NET.Extensions.ServiceCollectionExtensions
+  href: SonarCloud.NET.Extensions.ServiceCollectionExtensions.html
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: SonarCloud.NET.Extensions.ServiceCollectionExtensions

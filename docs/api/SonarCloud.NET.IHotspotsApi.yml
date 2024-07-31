@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.IHotspotsApi
+  commentId: T:SonarCloud.NET.IHotspotsApi
+  id: IHotspotsApi
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.IHotspotsApi.ChangeStatus(SonarCloud.NET.HotspotsChangeStatusRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IHotspotsApi.Search(SonarCloud.NET.HotspotsSearchRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IHotspotsApi.Show(SonarCloud.NET.HotspotsShowRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IHotspotsApi
+  nameWithType: IHotspotsApi
+  fullName: SonarCloud.NET.IHotspotsApi
+  type: Interface
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: IHotspotsApi
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 6
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public interface IHotspotsApi
+    content.vb: Public Interface IHotspotsApi
+- uid: SonarCloud.NET.IHotspotsApi.ChangeStatus(SonarCloud.NET.HotspotsChangeStatusRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IHotspotsApi.ChangeStatus(SonarCloud.NET.HotspotsChangeStatusRequest,System.Threading.CancellationToken)
+  id: ChangeStatus(SonarCloud.NET.HotspotsChangeStatusRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IHotspotsApi
+  langs:
+  - csharp
+  - vb
+  name: ChangeStatus(HotspotsChangeStatusRequest, CancellationToken)
+  nameWithType: IHotspotsApi.ChangeStatus(HotspotsChangeStatusRequest, CancellationToken)
+  fullName: SonarCloud.NET.IHotspotsApi.ChangeStatus(SonarCloud.NET.HotspotsChangeStatusRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: ChangeStatus
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 8
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task ChangeStatus(HotspotsChangeStatusRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.HotspotsChangeStatusRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ChangeStatus(request As HotspotsChangeStatusRequest, cancellationToken As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IHotspotsApi.ChangeStatus*
+- uid: SonarCloud.NET.IHotspotsApi.Search(SonarCloud.NET.HotspotsSearchRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IHotspotsApi.Search(SonarCloud.NET.HotspotsSearchRequest,System.Threading.CancellationToken)
+  id: Search(SonarCloud.NET.HotspotsSearchRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IHotspotsApi
+  langs:
+  - csharp
+  - vb
+  name: Search(HotspotsSearchRequest, CancellationToken)
+  nameWithType: IHotspotsApi.Search(HotspotsSearchRequest, CancellationToken)
+  fullName: SonarCloud.NET.IHotspotsApi.Search(SonarCloud.NET.HotspotsSearchRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Search
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 9
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<HotspotsSearchResponse> Search(HotspotsSearchRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.HotspotsSearchRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.HotspotsSearchResponse}
+    content.vb: Function Search(request As HotspotsSearchRequest, cancellationToken As CancellationToken = Nothing) As Task(Of HotspotsSearchResponse)
+  overload: SonarCloud.NET.IHotspotsApi.Search*
+- uid: SonarCloud.NET.IHotspotsApi.Show(SonarCloud.NET.HotspotsShowRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IHotspotsApi.Show(SonarCloud.NET.HotspotsShowRequest,System.Threading.CancellationToken)
+  id: Show(SonarCloud.NET.HotspotsShowRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IHotspotsApi
+  langs:
+  - csharp
+  - vb
+  name: Show(HotspotsShowRequest, CancellationToken)
+  nameWithType: IHotspotsApi.Show(HotspotsShowRequest, CancellationToken)
+  fullName: SonarCloud.NET.IHotspotsApi.Show(SonarCloud.NET.HotspotsShowRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Show
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 10
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<HotspotsShowResponse> Show(HotspotsShowRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.HotspotsShowRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.HotspotsShowResponse}
+    content.vb: Function Show(request As HotspotsShowRequest, cancellationToken As CancellationToken = Nothing) As Task(Of HotspotsShowResponse)
+  overload: SonarCloud.NET.IHotspotsApi.Show*
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: SonarCloud.NET.IHotspotsApi.ChangeStatus*
+  commentId: Overload:SonarCloud.NET.IHotspotsApi.ChangeStatus
+  href: SonarCloud.NET.IHotspotsApi.html#SonarCloud_NET_IHotspotsApi_ChangeStatus_SonarCloud_NET_HotspotsChangeStatusRequest_System_Threading_CancellationToken_
+  name: ChangeStatus
+  nameWithType: IHotspotsApi.ChangeStatus
+  fullName: SonarCloud.NET.IHotspotsApi.ChangeStatus
+- uid: SonarCloud.NET.HotspotsChangeStatusRequest
+  commentId: T:SonarCloud.NET.HotspotsChangeStatusRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.HotspotsChangeStatusRequest.html
+  name: HotspotsChangeStatusRequest
+  nameWithType: HotspotsChangeStatusRequest
+  fullName: SonarCloud.NET.HotspotsChangeStatusRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SonarCloud.NET.IHotspotsApi.Search*
+  commentId: Overload:SonarCloud.NET.IHotspotsApi.Search
+  href: SonarCloud.NET.IHotspotsApi.html#SonarCloud_NET_IHotspotsApi_Search_SonarCloud_NET_HotspotsSearchRequest_System_Threading_CancellationToken_
+  name: Search
+  nameWithType: IHotspotsApi.Search
+  fullName: SonarCloud.NET.IHotspotsApi.Search
+- uid: SonarCloud.NET.HotspotsSearchRequest
+  commentId: T:SonarCloud.NET.HotspotsSearchRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.HotspotsSearchRequest.html
+  name: HotspotsSearchRequest
+  nameWithType: HotspotsSearchRequest
+  fullName: SonarCloud.NET.HotspotsSearchRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.HotspotsSearchResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.HotspotsSearchResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HotspotsSearchResponse>
+  nameWithType: Task<HotspotsSearchResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.HotspotsSearchResponse>
+  nameWithType.vb: Task(Of HotspotsSearchResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.HotspotsSearchResponse)
+  name.vb: Task(Of HotspotsSearchResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.HotspotsSearchResponse
+    name: HotspotsSearchResponse
+    href: SonarCloud.NET.HotspotsSearchResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.HotspotsSearchResponse
+    name: HotspotsSearchResponse
+    href: SonarCloud.NET.HotspotsSearchResponse.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SonarCloud.NET.IHotspotsApi.Show*
+  commentId: Overload:SonarCloud.NET.IHotspotsApi.Show
+  href: SonarCloud.NET.IHotspotsApi.html#SonarCloud_NET_IHotspotsApi_Show_SonarCloud_NET_HotspotsShowRequest_System_Threading_CancellationToken_
+  name: Show
+  nameWithType: IHotspotsApi.Show
+  fullName: SonarCloud.NET.IHotspotsApi.Show
+- uid: SonarCloud.NET.HotspotsShowRequest
+  commentId: T:SonarCloud.NET.HotspotsShowRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.HotspotsShowRequest.html
+  name: HotspotsShowRequest
+  nameWithType: HotspotsShowRequest
+  fullName: SonarCloud.NET.HotspotsShowRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.HotspotsShowResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.HotspotsShowResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<HotspotsShowResponse>
+  nameWithType: Task<HotspotsShowResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.HotspotsShowResponse>
+  nameWithType.vb: Task(Of HotspotsShowResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.HotspotsShowResponse)
+  name.vb: Task(Of HotspotsShowResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.HotspotsShowResponse
+    name: HotspotsShowResponse
+    href: SonarCloud.NET.HotspotsShowResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.HotspotsShowResponse
+    name: HotspotsShowResponse
+    href: SonarCloud.NET.HotspotsShowResponse.html
+  - name: )

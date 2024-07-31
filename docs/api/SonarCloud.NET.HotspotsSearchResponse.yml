@@ -1,0 +1,521 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.HotspotsSearchResponse
+  commentId: T:SonarCloud.NET.HotspotsSearchResponse
+  id: HotspotsSearchResponse
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.HotspotsSearchResponse.Components
+  - SonarCloud.NET.HotspotsSearchResponse.Hotspots
+  - SonarCloud.NET.HotspotsSearchResponse.Paging
+  langs:
+  - csharp
+  - vb
+  name: HotspotsSearchResponse
+  nameWithType: HotspotsSearchResponse
+  fullName: SonarCloud.NET.HotspotsSearchResponse
+  type: Class
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: HotspotsSearchResponse
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 26
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public class HotspotsSearchResponse
+    content.vb: Public Class HotspotsSearchResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SonarCloud.NET.HotspotsSearchResponse.Paging
+  commentId: P:SonarCloud.NET.HotspotsSearchResponse.Paging
+  id: Paging
+  parent: SonarCloud.NET.HotspotsSearchResponse
+  langs:
+  - csharp
+  - vb
+  name: Paging
+  nameWithType: HotspotsSearchResponse.Paging
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Paging
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Paging
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 28
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("paging")]
+
+      public Paging Paging { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Paging
+    content.vb: >-
+      <JsonPropertyName("paging")>
+
+      Public Property Paging As Paging
+  overload: SonarCloud.NET.HotspotsSearchResponse.Paging*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: paging
+- uid: SonarCloud.NET.HotspotsSearchResponse.Hotspots
+  commentId: P:SonarCloud.NET.HotspotsSearchResponse.Hotspots
+  id: Hotspots
+  parent: SonarCloud.NET.HotspotsSearchResponse
+  langs:
+  - csharp
+  - vb
+  name: Hotspots
+  nameWithType: HotspotsSearchResponse.Hotspots
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Hotspots
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Hotspots
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 31
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("hotspots")]
+
+      public Hotspot[] Hotspots { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Hotspot[]
+    content.vb: >-
+      <JsonPropertyName("hotspots")>
+
+      Public Property Hotspots As Hotspot()
+  overload: SonarCloud.NET.HotspotsSearchResponse.Hotspots*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: hotspots
+- uid: SonarCloud.NET.HotspotsSearchResponse.Components
+  commentId: P:SonarCloud.NET.HotspotsSearchResponse.Components
+  id: Components
+  parent: SonarCloud.NET.HotspotsSearchResponse
+  langs:
+  - csharp
+  - vb
+  name: Components
+  nameWithType: HotspotsSearchResponse.Components
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Components
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Components
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 34
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("components")]
+
+      public Component[] Components { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Component[]
+    content.vb: >-
+      <JsonPropertyName("components")>
+
+      Public Property Components As Component()
+  overload: SonarCloud.NET.HotspotsSearchResponse.Components*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: components
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SonarCloud.NET.HotspotsSearchResponse.Paging*
+  commentId: Overload:SonarCloud.NET.HotspotsSearchResponse.Paging
+  href: SonarCloud.NET.HotspotsSearchResponse.html#SonarCloud_NET_HotspotsSearchResponse_Paging
+  name: Paging
+  nameWithType: HotspotsSearchResponse.Paging
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Paging
+- uid: SonarCloud.NET.Models.Paging
+  commentId: T:SonarCloud.NET.Models.Paging
+  parent: SonarCloud.NET.Models
+  href: SonarCloud.NET.Models.Paging.html
+  name: Paging
+  nameWithType: Paging
+  fullName: SonarCloud.NET.Models.Paging
+- uid: SonarCloud.NET.Models
+  commentId: N:SonarCloud.NET.Models
+  href: SonarCloud.html
+  name: SonarCloud.NET.Models
+  nameWithType: SonarCloud.NET.Models
+  fullName: SonarCloud.NET.Models
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  - name: .
+  - uid: SonarCloud.NET.Models
+    name: Models
+    href: SonarCloud.NET.Models.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  - name: .
+  - uid: SonarCloud.NET.Models
+    name: Models
+    href: SonarCloud.NET.Models.html
+- uid: SonarCloud.NET.HotspotsSearchResponse.Hotspots*
+  commentId: Overload:SonarCloud.NET.HotspotsSearchResponse.Hotspots
+  href: SonarCloud.NET.HotspotsSearchResponse.html#SonarCloud_NET_HotspotsSearchResponse_Hotspots
+  name: Hotspots
+  nameWithType: HotspotsSearchResponse.Hotspots
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Hotspots
+- uid: SonarCloud.NET.Models.Hotspot[]
+  isExternal: true
+  href: SonarCloud.NET.Models.Hotspot.html
+  name: Hotspot[]
+  nameWithType: Hotspot[]
+  fullName: SonarCloud.NET.Models.Hotspot[]
+  nameWithType.vb: Hotspot()
+  fullName.vb: SonarCloud.NET.Models.Hotspot()
+  name.vb: Hotspot()
+  spec.csharp:
+  - uid: SonarCloud.NET.Models.Hotspot
+    name: Hotspot
+    href: SonarCloud.NET.Models.Hotspot.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SonarCloud.NET.Models.Hotspot
+    name: Hotspot
+    href: SonarCloud.NET.Models.Hotspot.html
+  - name: (
+  - name: )
+- uid: SonarCloud.NET.HotspotsSearchResponse.Components*
+  commentId: Overload:SonarCloud.NET.HotspotsSearchResponse.Components
+  href: SonarCloud.NET.HotspotsSearchResponse.html#SonarCloud_NET_HotspotsSearchResponse_Components
+  name: Components
+  nameWithType: HotspotsSearchResponse.Components
+  fullName: SonarCloud.NET.HotspotsSearchResponse.Components
+- uid: SonarCloud.NET.Models.Component[]
+  isExternal: true
+  href: SonarCloud.NET.Models.Component.html
+  name: Component[]
+  nameWithType: Component[]
+  fullName: SonarCloud.NET.Models.Component[]
+  nameWithType.vb: Component()
+  fullName.vb: SonarCloud.NET.Models.Component()
+  name.vb: Component()
+  spec.csharp:
+  - uid: SonarCloud.NET.Models.Component
+    name: Component
+    href: SonarCloud.NET.Models.Component.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SonarCloud.NET.Models.Component
+    name: Component
+    href: SonarCloud.NET.Models.Component.html
+  - name: (
+  - name: )
