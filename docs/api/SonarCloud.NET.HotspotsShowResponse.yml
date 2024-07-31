@@ -1,0 +1,1176 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.HotspotsShowResponse
+  commentId: T:SonarCloud.NET.HotspotsShowResponse
+  id: HotspotsShowResponse
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.HotspotsShowResponse.Assignee
+  - SonarCloud.NET.HotspotsShowResponse.Author
+  - SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+  - SonarCloud.NET.HotspotsShowResponse.Changelog
+  - SonarCloud.NET.HotspotsShowResponse.Comment
+  - SonarCloud.NET.HotspotsShowResponse.Component
+  - SonarCloud.NET.HotspotsShowResponse.CreationDate
+  - SonarCloud.NET.HotspotsShowResponse.Key
+  - SonarCloud.NET.HotspotsShowResponse.Line
+  - SonarCloud.NET.HotspotsShowResponse.Message
+  - SonarCloud.NET.HotspotsShowResponse.Project
+  - SonarCloud.NET.HotspotsShowResponse.Rule
+  - SonarCloud.NET.HotspotsShowResponse.Status
+  - SonarCloud.NET.HotspotsShowResponse.UpdateDate
+  - SonarCloud.NET.HotspotsShowResponse.Users
+  langs:
+  - csharp
+  - vb
+  name: HotspotsShowResponse
+  nameWithType: HotspotsShowResponse
+  fullName: SonarCloud.NET.HotspotsShowResponse
+  type: Class
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: HotspotsShowResponse
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 77
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public class HotspotsShowResponse
+    content.vb: Public Class HotspotsShowResponse
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SonarCloud.NET.HotspotsShowResponse.Key
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Key
+  id: Key
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: HotspotsShowResponse.Key
+  fullName: SonarCloud.NET.HotspotsShowResponse.Key
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Key
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 79
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("key")]
+
+      public required string Key { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("key")>
+
+      Public Property Key As String
+  overload: SonarCloud.NET.HotspotsShowResponse.Key*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: key
+- uid: SonarCloud.NET.HotspotsShowResponse.Component
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Component
+  id: Component
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Component
+  nameWithType: HotspotsShowResponse.Component
+  fullName: SonarCloud.NET.HotspotsShowResponse.Component
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Component
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 81
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("component")]
+
+      public required Component Component { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Component
+    content.vb: >-
+      <JsonPropertyName("component")>
+
+      Public Property Component As Component
+  overload: SonarCloud.NET.HotspotsShowResponse.Component*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: component
+- uid: SonarCloud.NET.HotspotsShowResponse.Project
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Project
+  id: Project
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Project
+  nameWithType: HotspotsShowResponse.Project
+  fullName: SonarCloud.NET.HotspotsShowResponse.Project
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Project
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 83
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("project")]
+
+      public required Project Project { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Project
+    content.vb: >-
+      <JsonPropertyName("project")>
+
+      Public Property Project As Project
+  overload: SonarCloud.NET.HotspotsShowResponse.Project*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: project
+- uid: SonarCloud.NET.HotspotsShowResponse.Rule
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Rule
+  id: Rule
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Rule
+  nameWithType: HotspotsShowResponse.Rule
+  fullName: SonarCloud.NET.HotspotsShowResponse.Rule
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Rule
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 85
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("rule")]
+
+      public required Rule Rule { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Rule
+    content.vb: >-
+      <JsonPropertyName("rule")>
+
+      Public Property Rule As Rule
+  overload: SonarCloud.NET.HotspotsShowResponse.Rule*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: rule
+- uid: SonarCloud.NET.HotspotsShowResponse.Status
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Status
+  id: Status
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: HotspotsShowResponse.Status
+  fullName: SonarCloud.NET.HotspotsShowResponse.Status
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Status
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 87
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("status")]
+
+      public required string Status { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("status")>
+
+      Public Property Status As String
+  overload: SonarCloud.NET.HotspotsShowResponse.Status*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: status
+- uid: SonarCloud.NET.HotspotsShowResponse.Line
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Line
+  id: Line
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Line
+  nameWithType: HotspotsShowResponse.Line
+  fullName: SonarCloud.NET.HotspotsShowResponse.Line
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Line
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 89
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("line")]
+
+      public int Line { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <JsonPropertyName("line")>
+
+      Public Property Line As Integer
+  overload: SonarCloud.NET.HotspotsShowResponse.Line*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: line
+- uid: SonarCloud.NET.HotspotsShowResponse.Message
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Message
+  id: Message
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: HotspotsShowResponse.Message
+  fullName: SonarCloud.NET.HotspotsShowResponse.Message
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Message
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 91
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("message")]
+
+      public required string Message { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("message")>
+
+      Public Property Message As String
+  overload: SonarCloud.NET.HotspotsShowResponse.Message*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: message
+- uid: SonarCloud.NET.HotspotsShowResponse.Assignee
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Assignee
+  id: Assignee
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Assignee
+  nameWithType: HotspotsShowResponse.Assignee
+  fullName: SonarCloud.NET.HotspotsShowResponse.Assignee
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Assignee
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 93
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("assignee")]
+
+      public required string Assignee { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("assignee")>
+
+      Public Property Assignee As String
+  overload: SonarCloud.NET.HotspotsShowResponse.Assignee*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: assignee
+- uid: SonarCloud.NET.HotspotsShowResponse.Author
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Author
+  id: Author
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Author
+  nameWithType: HotspotsShowResponse.Author
+  fullName: SonarCloud.NET.HotspotsShowResponse.Author
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Author
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 95
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("author")]
+
+      public required string Author { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <JsonPropertyName("author")>
+
+      Public Property Author As String
+  overload: SonarCloud.NET.HotspotsShowResponse.Author*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: author
+- uid: SonarCloud.NET.HotspotsShowResponse.CreationDate
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.CreationDate
+  id: CreationDate
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: CreationDate
+  nameWithType: HotspotsShowResponse.CreationDate
+  fullName: SonarCloud.NET.HotspotsShowResponse.CreationDate
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: CreationDate
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 97
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("creationDate")]
+
+      public DateTime CreationDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonPropertyName("creationDate")>
+
+      Public Property CreationDate As Date
+  overload: SonarCloud.NET.HotspotsShowResponse.CreationDate*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: creationDate
+- uid: SonarCloud.NET.HotspotsShowResponse.UpdateDate
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.UpdateDate
+  id: UpdateDate
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: UpdateDate
+  nameWithType: HotspotsShowResponse.UpdateDate
+  fullName: SonarCloud.NET.HotspotsShowResponse.UpdateDate
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: UpdateDate
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 99
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("updateDate")]
+
+      public DateTime UpdateDate { get; set; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: >-
+      <JsonPropertyName("updateDate")>
+
+      Public Property UpdateDate As Date
+  overload: SonarCloud.NET.HotspotsShowResponse.UpdateDate*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: updateDate
+- uid: SonarCloud.NET.HotspotsShowResponse.Changelog
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Changelog
+  id: Changelog
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Changelog
+  nameWithType: HotspotsShowResponse.Changelog
+  fullName: SonarCloud.NET.HotspotsShowResponse.Changelog
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Changelog
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 101
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("changelog")]
+
+      public Changelog[] Changelog { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Changelog[]
+    content.vb: >-
+      <JsonPropertyName("changelog")>
+
+      Public Property Changelog As Changelog()
+  overload: SonarCloud.NET.HotspotsShowResponse.Changelog*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: changelog
+- uid: SonarCloud.NET.HotspotsShowResponse.Comment
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Comment
+  id: Comment
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Comment
+  nameWithType: HotspotsShowResponse.Comment
+  fullName: SonarCloud.NET.HotspotsShowResponse.Comment
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Comment
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 103
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("comment")]
+
+      public Comment[] Comment { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.Comment[]
+    content.vb: >-
+      <JsonPropertyName("comment")>
+
+      Public Property Comment As Comment()
+  overload: SonarCloud.NET.HotspotsShowResponse.Comment*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: comment
+- uid: SonarCloud.NET.HotspotsShowResponse.Users
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.Users
+  id: Users
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: Users
+  nameWithType: HotspotsShowResponse.Users
+  fullName: SonarCloud.NET.HotspotsShowResponse.Users
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Users
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 105
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("users")]
+
+      public User[] Users { get; set; }
+    parameters: []
+    return:
+      type: SonarCloud.NET.Models.User[]
+    content.vb: >-
+      <JsonPropertyName("users")>
+
+      Public Property Users As User()
+  overload: SonarCloud.NET.HotspotsShowResponse.Users*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: users
+- uid: SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+  commentId: P:SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+  id: CanChangeStatus
+  parent: SonarCloud.NET.HotspotsShowResponse
+  langs:
+  - csharp
+  - vb
+  name: CanChangeStatus
+  nameWithType: HotspotsShowResponse.CanChangeStatus
+  fullName: SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/HotspotsApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: CanChangeStatus
+    path: src/SonarCloud.NET/HotspotsApi.cs
+    startLine: 107
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [JsonPropertyName("canChangeStatus")]
+
+      public bool CanChangeStatus { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <JsonPropertyName("canChangeStatus")>
+
+      Public Property CanChangeStatus As Boolean
+  overload: SonarCloud.NET.HotspotsShowResponse.CanChangeStatus*
+  attributes:
+  - type: System.Text.Json.Serialization.JsonPropertyNameAttribute
+    ctor: System.Text.Json.Serialization.JsonPropertyNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: canChangeStatus
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SonarCloud.NET.HotspotsShowResponse.Key*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Key
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Key
+  name: Key
+  nameWithType: HotspotsShowResponse.Key
+  fullName: SonarCloud.NET.HotspotsShowResponse.Key
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SonarCloud.NET.HotspotsShowResponse.Component*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Component
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Component
+  name: Component
+  nameWithType: HotspotsShowResponse.Component
+  fullName: SonarCloud.NET.HotspotsShowResponse.Component
+- uid: SonarCloud.NET.Models.Component
+  commentId: T:SonarCloud.NET.Models.Component
+  parent: SonarCloud.NET.Models
+  href: SonarCloud.NET.Models.Component.html
+  name: Component
+  nameWithType: Component
+  fullName: SonarCloud.NET.Models.Component
+- uid: SonarCloud.NET.Models
+  commentId: N:SonarCloud.NET.Models
+  href: SonarCloud.html
+  name: SonarCloud.NET.Models
+  nameWithType: SonarCloud.NET.Models
+  fullName: SonarCloud.NET.Models
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  - name: .
+  - uid: SonarCloud.NET.Models
+    name: Models
+    href: SonarCloud.NET.Models.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  - name: .
+  - uid: SonarCloud.NET.Models
+    name: Models
+    href: SonarCloud.NET.Models.html
+- uid: SonarCloud.NET.HotspotsShowResponse.Project*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Project
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Project
+  name: Project
+  nameWithType: HotspotsShowResponse.Project
+  fullName: SonarCloud.NET.HotspotsShowResponse.Project
+- uid: SonarCloud.NET.Models.Project
+  commentId: T:SonarCloud.NET.Models.Project
+  parent: SonarCloud.NET.Models
+  href: SonarCloud.NET.Models.Project.html
+  name: Project
+  nameWithType: Project
+  fullName: SonarCloud.NET.Models.Project
+- uid: SonarCloud.NET.HotspotsShowResponse.Rule*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Rule
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Rule
+  name: Rule
+  nameWithType: HotspotsShowResponse.Rule
+  fullName: SonarCloud.NET.HotspotsShowResponse.Rule
+- uid: SonarCloud.NET.Models.Rule
+  commentId: T:SonarCloud.NET.Models.Rule
+  parent: SonarCloud.NET.Models
+  href: SonarCloud.NET.Models.Rule.html
+  name: Rule
+  nameWithType: Rule
+  fullName: SonarCloud.NET.Models.Rule
+- uid: SonarCloud.NET.HotspotsShowResponse.Status*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Status
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Status
+  name: Status
+  nameWithType: HotspotsShowResponse.Status
+  fullName: SonarCloud.NET.HotspotsShowResponse.Status
+- uid: SonarCloud.NET.HotspotsShowResponse.Line*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Line
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Line
+  name: Line
+  nameWithType: HotspotsShowResponse.Line
+  fullName: SonarCloud.NET.HotspotsShowResponse.Line
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: SonarCloud.NET.HotspotsShowResponse.Message*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Message
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Message
+  name: Message
+  nameWithType: HotspotsShowResponse.Message
+  fullName: SonarCloud.NET.HotspotsShowResponse.Message
+- uid: SonarCloud.NET.HotspotsShowResponse.Assignee*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Assignee
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Assignee
+  name: Assignee
+  nameWithType: HotspotsShowResponse.Assignee
+  fullName: SonarCloud.NET.HotspotsShowResponse.Assignee
+- uid: SonarCloud.NET.HotspotsShowResponse.Author*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Author
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Author
+  name: Author
+  nameWithType: HotspotsShowResponse.Author
+  fullName: SonarCloud.NET.HotspotsShowResponse.Author
+- uid: SonarCloud.NET.HotspotsShowResponse.CreationDate*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.CreationDate
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_CreationDate
+  name: CreationDate
+  nameWithType: HotspotsShowResponse.CreationDate
+  fullName: SonarCloud.NET.HotspotsShowResponse.CreationDate
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: SonarCloud.NET.HotspotsShowResponse.UpdateDate*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.UpdateDate
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_UpdateDate
+  name: UpdateDate
+  nameWithType: HotspotsShowResponse.UpdateDate
+  fullName: SonarCloud.NET.HotspotsShowResponse.UpdateDate
+- uid: SonarCloud.NET.HotspotsShowResponse.Changelog*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Changelog
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Changelog
+  name: Changelog
+  nameWithType: HotspotsShowResponse.Changelog
+  fullName: SonarCloud.NET.HotspotsShowResponse.Changelog
+- uid: SonarCloud.NET.Models.Changelog[]
+  isExternal: true
+  href: SonarCloud.NET.Models.Changelog.html
+  name: Changelog[]
+  nameWithType: Changelog[]
+  fullName: SonarCloud.NET.Models.Changelog[]
+  nameWithType.vb: Changelog()
+  fullName.vb: SonarCloud.NET.Models.Changelog()
+  name.vb: Changelog()
+  spec.csharp:
+  - uid: SonarCloud.NET.Models.Changelog
+    name: Changelog
+    href: SonarCloud.NET.Models.Changelog.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SonarCloud.NET.Models.Changelog
+    name: Changelog
+    href: SonarCloud.NET.Models.Changelog.html
+  - name: (
+  - name: )
+- uid: SonarCloud.NET.HotspotsShowResponse.Comment*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Comment
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Comment
+  name: Comment
+  nameWithType: HotspotsShowResponse.Comment
+  fullName: SonarCloud.NET.HotspotsShowResponse.Comment
+- uid: SonarCloud.NET.Models.Comment[]
+  isExternal: true
+  href: SonarCloud.NET.Models.Comment.html
+  name: Comment[]
+  nameWithType: Comment[]
+  fullName: SonarCloud.NET.Models.Comment[]
+  nameWithType.vb: Comment()
+  fullName.vb: SonarCloud.NET.Models.Comment()
+  name.vb: Comment()
+  spec.csharp:
+  - uid: SonarCloud.NET.Models.Comment
+    name: Comment
+    href: SonarCloud.NET.Models.Comment.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SonarCloud.NET.Models.Comment
+    name: Comment
+    href: SonarCloud.NET.Models.Comment.html
+  - name: (
+  - name: )
+- uid: SonarCloud.NET.HotspotsShowResponse.Users*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.Users
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_Users
+  name: Users
+  nameWithType: HotspotsShowResponse.Users
+  fullName: SonarCloud.NET.HotspotsShowResponse.Users
+- uid: SonarCloud.NET.Models.User[]
+  isExternal: true
+  href: SonarCloud.NET.Models.User.html
+  name: User[]
+  nameWithType: User[]
+  fullName: SonarCloud.NET.Models.User[]
+  nameWithType.vb: User()
+  fullName.vb: SonarCloud.NET.Models.User()
+  name.vb: User()
+  spec.csharp:
+  - uid: SonarCloud.NET.Models.User
+    name: User
+    href: SonarCloud.NET.Models.User.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: SonarCloud.NET.Models.User
+    name: User
+    href: SonarCloud.NET.Models.User.html
+  - name: (
+  - name: )
+- uid: SonarCloud.NET.HotspotsShowResponse.CanChangeStatus*
+  commentId: Overload:SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+  href: SonarCloud.NET.HotspotsShowResponse.html#SonarCloud_NET_HotspotsShowResponse_CanChangeStatus
+  name: CanChangeStatus
+  nameWithType: HotspotsShowResponse.CanChangeStatus
+  fullName: SonarCloud.NET.HotspotsShowResponse.CanChangeStatus
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

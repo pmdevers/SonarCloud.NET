@@ -23,12 +23,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{4B37A783
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{230F554B-A7FF-4621-B642-223FD828AC28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "example\Example.csproj", "{1C889D5C-402B-40A5-9229-2F183EE73D47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "example\Example.csproj", "{1C889D5C-402B-40A5-9229-2F183EE73D47}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{58919C80-FC47-4A85-B76A-8DE0B465A3C4}"
 	ProjectSection(SolutionItems) = preProject
 		src\Directory.Build.props = src\Directory.Build.props
 		src\Directory.Packages.props = src\Directory.Packages.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{D3491EF2-BF0C-4074-9E38-4B4EB4226BF7}"
+	ProjectSection(SolutionItems) = preProject
+		docs\getting-started.md = docs\getting-started.md
+		docs\introduction.md = docs\introduction.md
+		docs\toc.yml = docs\toc.yml
 	EndProjectSection
 EndProject
 Global

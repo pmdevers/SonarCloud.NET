@@ -1,0 +1,471 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.IComputeEngineApi
+  commentId: T:SonarCloud.NET.IComputeEngineApi
+  id: IComputeEngineApi
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.IComputeEngineApi.GetActivityStatus(SonarCloud.NET.GetActivityStatusRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IComputeEngineApi.GetPendingTasks(SonarCloud.NET.GetPendingTasksRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IComputeEngineApi.GetTaskDetails(SonarCloud.NET.GetTaskDetailsRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IComputeEngineApi.Search(SonarCloud.NET.SearchForTasksRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IComputeEngineApi
+  nameWithType: IComputeEngineApi
+  fullName: SonarCloud.NET.IComputeEngineApi
+  type: Interface
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComputeEngineApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: IComputeEngineApi
+    path: src/SonarCloud.NET/ComputeEngineApi.cs
+    startLine: 6
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public interface IComputeEngineApi
+    content.vb: Public Interface IComputeEngineApi
+- uid: SonarCloud.NET.IComputeEngineApi.Search(SonarCloud.NET.SearchForTasksRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IComputeEngineApi.Search(SonarCloud.NET.SearchForTasksRequest,System.Threading.CancellationToken)
+  id: Search(SonarCloud.NET.SearchForTasksRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IComputeEngineApi
+  langs:
+  - csharp
+  - vb
+  name: Search(SearchForTasksRequest, CancellationToken)
+  nameWithType: IComputeEngineApi.Search(SearchForTasksRequest, CancellationToken)
+  fullName: SonarCloud.NET.IComputeEngineApi.Search(SonarCloud.NET.SearchForTasksRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComputeEngineApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Search
+    path: src/SonarCloud.NET/ComputeEngineApi.cs
+    startLine: 8
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<SearchForTasksResponse> Search(SearchForTasksRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.SearchForTasksRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.SearchForTasksResponse}
+    content.vb: Function Search(request As SearchForTasksRequest, cancellationToken As CancellationToken = Nothing) As Task(Of SearchForTasksResponse)
+  overload: SonarCloud.NET.IComputeEngineApi.Search*
+- uid: SonarCloud.NET.IComputeEngineApi.GetActivityStatus(SonarCloud.NET.GetActivityStatusRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IComputeEngineApi.GetActivityStatus(SonarCloud.NET.GetActivityStatusRequest,System.Threading.CancellationToken)
+  id: GetActivityStatus(SonarCloud.NET.GetActivityStatusRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IComputeEngineApi
+  langs:
+  - csharp
+  - vb
+  name: GetActivityStatus(GetActivityStatusRequest, CancellationToken)
+  nameWithType: IComputeEngineApi.GetActivityStatus(GetActivityStatusRequest, CancellationToken)
+  fullName: SonarCloud.NET.IComputeEngineApi.GetActivityStatus(SonarCloud.NET.GetActivityStatusRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComputeEngineApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: GetActivityStatus
+    path: src/SonarCloud.NET/ComputeEngineApi.cs
+    startLine: 9
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<GetActivityStatusResponse> GetActivityStatus(GetActivityStatusRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.GetActivityStatusRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.GetActivityStatusResponse}
+    content.vb: Function GetActivityStatus(request As GetActivityStatusRequest, cancellationToken As CancellationToken = Nothing) As Task(Of GetActivityStatusResponse)
+  overload: SonarCloud.NET.IComputeEngineApi.GetActivityStatus*
+- uid: SonarCloud.NET.IComputeEngineApi.GetPendingTasks(SonarCloud.NET.GetPendingTasksRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IComputeEngineApi.GetPendingTasks(SonarCloud.NET.GetPendingTasksRequest,System.Threading.CancellationToken)
+  id: GetPendingTasks(SonarCloud.NET.GetPendingTasksRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IComputeEngineApi
+  langs:
+  - csharp
+  - vb
+  name: GetPendingTasks(GetPendingTasksRequest, CancellationToken)
+  nameWithType: IComputeEngineApi.GetPendingTasks(GetPendingTasksRequest, CancellationToken)
+  fullName: SonarCloud.NET.IComputeEngineApi.GetPendingTasks(SonarCloud.NET.GetPendingTasksRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComputeEngineApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: GetPendingTasks
+    path: src/SonarCloud.NET/ComputeEngineApi.cs
+    startLine: 10
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<PendingTasksResponse> GetPendingTasks(GetPendingTasksRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.GetPendingTasksRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.PendingTasksResponse}
+    content.vb: Function GetPendingTasks(request As GetPendingTasksRequest, cancellationToken As CancellationToken = Nothing) As Task(Of PendingTasksResponse)
+  overload: SonarCloud.NET.IComputeEngineApi.GetPendingTasks*
+- uid: SonarCloud.NET.IComputeEngineApi.GetTaskDetails(SonarCloud.NET.GetTaskDetailsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IComputeEngineApi.GetTaskDetails(SonarCloud.NET.GetTaskDetailsRequest,System.Threading.CancellationToken)
+  id: GetTaskDetails(SonarCloud.NET.GetTaskDetailsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IComputeEngineApi
+  langs:
+  - csharp
+  - vb
+  name: GetTaskDetails(GetTaskDetailsRequest, CancellationToken)
+  nameWithType: IComputeEngineApi.GetTaskDetails(GetTaskDetailsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IComputeEngineApi.GetTaskDetails(SonarCloud.NET.GetTaskDetailsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ComputeEngineApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: GetTaskDetails
+    path: src/SonarCloud.NET/ComputeEngineApi.cs
+    startLine: 11
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<TaskDetailsResponse> GetTaskDetails(GetTaskDetailsRequest request, CancellationToken cancellationToken = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.GetTaskDetailsRequest
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.TaskDetailsResponse}
+    content.vb: Function GetTaskDetails(request As GetTaskDetailsRequest, cancellationToken As CancellationToken = Nothing) As Task(Of TaskDetailsResponse)
+  overload: SonarCloud.NET.IComputeEngineApi.GetTaskDetails*
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: SonarCloud.NET.IComputeEngineApi.Search*
+  commentId: Overload:SonarCloud.NET.IComputeEngineApi.Search
+  href: SonarCloud.NET.IComputeEngineApi.html#SonarCloud_NET_IComputeEngineApi_Search_SonarCloud_NET_SearchForTasksRequest_System_Threading_CancellationToken_
+  name: Search
+  nameWithType: IComputeEngineApi.Search
+  fullName: SonarCloud.NET.IComputeEngineApi.Search
+- uid: SonarCloud.NET.SearchForTasksRequest
+  commentId: T:SonarCloud.NET.SearchForTasksRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.SearchForTasksRequest.html
+  name: SearchForTasksRequest
+  nameWithType: SearchForTasksRequest
+  fullName: SonarCloud.NET.SearchForTasksRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.SearchForTasksResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.SearchForTasksResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SearchForTasksResponse>
+  nameWithType: Task<SearchForTasksResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.SearchForTasksResponse>
+  nameWithType.vb: Task(Of SearchForTasksResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.SearchForTasksResponse)
+  name.vb: Task(Of SearchForTasksResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.SearchForTasksResponse
+    name: SearchForTasksResponse
+    href: SonarCloud.NET.SearchForTasksResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.SearchForTasksResponse
+    name: SearchForTasksResponse
+    href: SonarCloud.NET.SearchForTasksResponse.html
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SonarCloud.NET.IComputeEngineApi.GetActivityStatus*
+  commentId: Overload:SonarCloud.NET.IComputeEngineApi.GetActivityStatus
+  href: SonarCloud.NET.IComputeEngineApi.html#SonarCloud_NET_IComputeEngineApi_GetActivityStatus_SonarCloud_NET_GetActivityStatusRequest_System_Threading_CancellationToken_
+  name: GetActivityStatus
+  nameWithType: IComputeEngineApi.GetActivityStatus
+  fullName: SonarCloud.NET.IComputeEngineApi.GetActivityStatus
+- uid: SonarCloud.NET.GetActivityStatusRequest
+  commentId: T:SonarCloud.NET.GetActivityStatusRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.GetActivityStatusRequest.html
+  name: GetActivityStatusRequest
+  nameWithType: GetActivityStatusRequest
+  fullName: SonarCloud.NET.GetActivityStatusRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.GetActivityStatusResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.GetActivityStatusResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<GetActivityStatusResponse>
+  nameWithType: Task<GetActivityStatusResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.GetActivityStatusResponse>
+  nameWithType.vb: Task(Of GetActivityStatusResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.GetActivityStatusResponse)
+  name.vb: Task(Of GetActivityStatusResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.GetActivityStatusResponse
+    name: GetActivityStatusResponse
+    href: SonarCloud.NET.GetActivityStatusResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.GetActivityStatusResponse
+    name: GetActivityStatusResponse
+    href: SonarCloud.NET.GetActivityStatusResponse.html
+  - name: )
+- uid: SonarCloud.NET.IComputeEngineApi.GetPendingTasks*
+  commentId: Overload:SonarCloud.NET.IComputeEngineApi.GetPendingTasks
+  href: SonarCloud.NET.IComputeEngineApi.html#SonarCloud_NET_IComputeEngineApi_GetPendingTasks_SonarCloud_NET_GetPendingTasksRequest_System_Threading_CancellationToken_
+  name: GetPendingTasks
+  nameWithType: IComputeEngineApi.GetPendingTasks
+  fullName: SonarCloud.NET.IComputeEngineApi.GetPendingTasks
+- uid: SonarCloud.NET.GetPendingTasksRequest
+  commentId: T:SonarCloud.NET.GetPendingTasksRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.GetPendingTasksRequest.html
+  name: GetPendingTasksRequest
+  nameWithType: GetPendingTasksRequest
+  fullName: SonarCloud.NET.GetPendingTasksRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.PendingTasksResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.PendingTasksResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<PendingTasksResponse>
+  nameWithType: Task<PendingTasksResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.PendingTasksResponse>
+  nameWithType.vb: Task(Of PendingTasksResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.PendingTasksResponse)
+  name.vb: Task(Of PendingTasksResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.PendingTasksResponse
+    name: PendingTasksResponse
+    href: SonarCloud.NET.PendingTasksResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.PendingTasksResponse
+    name: PendingTasksResponse
+    href: SonarCloud.NET.PendingTasksResponse.html
+  - name: )
+- uid: SonarCloud.NET.IComputeEngineApi.GetTaskDetails*
+  commentId: Overload:SonarCloud.NET.IComputeEngineApi.GetTaskDetails
+  href: SonarCloud.NET.IComputeEngineApi.html#SonarCloud_NET_IComputeEngineApi_GetTaskDetails_SonarCloud_NET_GetTaskDetailsRequest_System_Threading_CancellationToken_
+  name: GetTaskDetails
+  nameWithType: IComputeEngineApi.GetTaskDetails
+  fullName: SonarCloud.NET.IComputeEngineApi.GetTaskDetails
+- uid: SonarCloud.NET.GetTaskDetailsRequest
+  commentId: T:SonarCloud.NET.GetTaskDetailsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.GetTaskDetailsRequest.html
+  name: GetTaskDetailsRequest
+  nameWithType: GetTaskDetailsRequest
+  fullName: SonarCloud.NET.GetTaskDetailsRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.TaskDetailsResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.TaskDetailsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TaskDetailsResponse>
+  nameWithType: Task<TaskDetailsResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.TaskDetailsResponse>
+  nameWithType.vb: Task(Of TaskDetailsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.TaskDetailsResponse)
+  name.vb: Task(Of TaskDetailsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.TaskDetailsResponse
+    name: TaskDetailsResponse
+    href: SonarCloud.NET.TaskDetailsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.TaskDetailsResponse
+    name: TaskDetailsResponse
+    href: SonarCloud.NET.TaskDetailsResponse.html
+  - name: )

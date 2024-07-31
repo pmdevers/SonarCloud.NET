@@ -1,0 +1,742 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.SearchProjectsRequest
+  commentId: T:SonarCloud.NET.SearchProjectsRequest
+  id: SearchProjectsRequest
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+  - SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+  - SonarCloud.NET.SearchProjectsRequest.Organization
+  - SonarCloud.NET.SearchProjectsRequest.Page
+  - SonarCloud.NET.SearchProjectsRequest.PageSize
+  - SonarCloud.NET.SearchProjectsRequest.Projects
+  - SonarCloud.NET.SearchProjectsRequest.Query
+  langs:
+  - csharp
+  - vb
+  name: SearchProjectsRequest
+  nameWithType: SearchProjectsRequest
+  fullName: SonarCloud.NET.SearchProjectsRequest
+  type: Class
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: SearchProjectsRequest
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 89
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public class SearchProjectsRequest
+    content.vb: Public Class SearchProjectsRequest
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+  id: AnalyzedBefore
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: AnalyzedBefore
+  nameWithType: SearchProjectsRequest.AnalyzedBefore
+  fullName: SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: AnalyzedBefore
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 91
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("analyzedBefore")]
+
+      public DateTime? AnalyzedBefore { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: >-
+      <QueryString("analyzedBefore")>
+
+      Public Property AnalyzedBefore As Date?
+  overload: SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: analyzedBefore
+- uid: SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+  id: OnProvisionedOnly
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: OnProvisionedOnly
+  nameWithType: SearchProjectsRequest.OnProvisionedOnly
+  fullName: SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: OnProvisionedOnly
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 94
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("onProvisionedOnly")]
+
+      public bool? OnProvisionedOnly { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: >-
+      <QueryString("onProvisionedOnly")>
+
+      Public Property OnProvisionedOnly As Boolean?
+  overload: SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: onProvisionedOnly
+- uid: SonarCloud.NET.SearchProjectsRequest.Organization
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.Organization
+  id: Organization
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: Organization
+  nameWithType: SearchProjectsRequest.Organization
+  fullName: SonarCloud.NET.SearchProjectsRequest.Organization
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Organization
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 97
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("organization")]
+
+      public required string Organization { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("organization")>
+
+      Public Property Organization As String
+  overload: SonarCloud.NET.SearchProjectsRequest.Organization*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: organization
+- uid: SonarCloud.NET.SearchProjectsRequest.Page
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.Page
+  id: Page
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: SearchProjectsRequest.Page
+  fullName: SonarCloud.NET.SearchProjectsRequest.Page
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Page
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 100
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("p")]
+
+      public int? Page { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <QueryString("p")>
+
+      Public Property Page As Integer?
+  overload: SonarCloud.NET.SearchProjectsRequest.Page*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: p
+- uid: SonarCloud.NET.SearchProjectsRequest.Projects
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.Projects
+  id: Projects
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: Projects
+  nameWithType: SearchProjectsRequest.Projects
+  fullName: SonarCloud.NET.SearchProjectsRequest.Projects
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Projects
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 103
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("projects")]
+
+      public string? Projects { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("projects")>
+
+      Public Property Projects As String
+  overload: SonarCloud.NET.SearchProjectsRequest.Projects*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: projects
+- uid: SonarCloud.NET.SearchProjectsRequest.PageSize
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.PageSize
+  id: PageSize
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: SearchProjectsRequest.PageSize
+  fullName: SonarCloud.NET.SearchProjectsRequest.PageSize
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: PageSize
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 106
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("ps")]
+
+      public int? PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: >-
+      <QueryString("ps")>
+
+      Public Property PageSize As Integer?
+  overload: SonarCloud.NET.SearchProjectsRequest.PageSize*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: ps
+- uid: SonarCloud.NET.SearchProjectsRequest.Query
+  commentId: P:SonarCloud.NET.SearchProjectsRequest.Query
+  id: Query
+  parent: SonarCloud.NET.SearchProjectsRequest
+  langs:
+  - csharp
+  - vb
+  name: Query
+  nameWithType: SearchProjectsRequest.Query
+  fullName: SonarCloud.NET.SearchProjectsRequest.Query
+  type: Property
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Query
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 109
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: >-
+      [QueryString("q")]
+
+      public string? Query { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <QueryString("q")>
+
+      Public Property Query As String
+  overload: SonarCloud.NET.SearchProjectsRequest.Query*
+  attributes:
+  - type: SonarCloud.NET.Helpers.QueryStringAttribute
+    ctor: SonarCloud.NET.Helpers.QueryStringAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: q
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_AnalyzedBefore
+  name: AnalyzedBefore
+  nameWithType: SearchProjectsRequest.AnalyzedBefore
+  fullName: SonarCloud.NET.SearchProjectsRequest.AnalyzedBefore
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_OnProvisionedOnly
+  name: OnProvisionedOnly
+  nameWithType: SearchProjectsRequest.OnProvisionedOnly
+  fullName: SonarCloud.NET.SearchProjectsRequest.OnProvisionedOnly
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: SonarCloud.NET.SearchProjectsRequest.Organization*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.Organization
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_Organization
+  name: Organization
+  nameWithType: SearchProjectsRequest.Organization
+  fullName: SonarCloud.NET.SearchProjectsRequest.Organization
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: SonarCloud.NET.SearchProjectsRequest.Page*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.Page
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_Page
+  name: Page
+  nameWithType: SearchProjectsRequest.Page
+  fullName: SonarCloud.NET.SearchProjectsRequest.Page
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: SonarCloud.NET.SearchProjectsRequest.Projects*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.Projects
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_Projects
+  name: Projects
+  nameWithType: SearchProjectsRequest.Projects
+  fullName: SonarCloud.NET.SearchProjectsRequest.Projects
+- uid: SonarCloud.NET.SearchProjectsRequest.PageSize*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.PageSize
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_PageSize
+  name: PageSize
+  nameWithType: SearchProjectsRequest.PageSize
+  fullName: SonarCloud.NET.SearchProjectsRequest.PageSize
+- uid: SonarCloud.NET.SearchProjectsRequest.Query*
+  commentId: Overload:SonarCloud.NET.SearchProjectsRequest.Query
+  href: SonarCloud.NET.SearchProjectsRequest.html#SonarCloud_NET_SearchProjectsRequest_Query
+  name: Query
+  nameWithType: SearchProjectsRequest.Query
+  fullName: SonarCloud.NET.SearchProjectsRequest.Query

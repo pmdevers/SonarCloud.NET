@@ -1,0 +1,507 @@
+### YamlMime:ManagedReference
+items:
+- uid: SonarCloud.NET.IProjectsApi
+  commentId: T:SonarCloud.NET.IProjectsApi
+  id: IProjectsApi
+  parent: SonarCloud.NET
+  children:
+  - SonarCloud.NET.IProjectsApi.BulkDelete(SonarCloud.NET.BulkDeleteRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectsApi.Create(SonarCloud.NET.CreateProjectsRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectsApi.Delete(SonarCloud.NET.DeleteProjectsRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectsApi.Search(SonarCloud.NET.SearchProjectsRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectsApi.UpdateKey(SonarCloud.NET.UpdateKeyRequest,System.Threading.CancellationToken)
+  - SonarCloud.NET.IProjectsApi.UpdateVisibility(SonarCloud.NET.UpdateVisibilityRequest,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IProjectsApi
+  nameWithType: IProjectsApi
+  fullName: SonarCloud.NET.IProjectsApi
+  type: Interface
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: IProjectsApi
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 7
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: public interface IProjectsApi
+    content.vb: Public Interface IProjectsApi
+- uid: SonarCloud.NET.IProjectsApi.BulkDelete(SonarCloud.NET.BulkDeleteRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.BulkDelete(SonarCloud.NET.BulkDeleteRequest,System.Threading.CancellationToken)
+  id: BulkDelete(SonarCloud.NET.BulkDeleteRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: BulkDelete(BulkDeleteRequest, CancellationToken)
+  nameWithType: IProjectsApi.BulkDelete(BulkDeleteRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.BulkDelete(SonarCloud.NET.BulkDeleteRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: BulkDelete
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 9
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task BulkDelete(BulkDeleteRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.BulkDeleteRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function BulkDelete(request As BulkDeleteRequest, token As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IProjectsApi.BulkDelete*
+- uid: SonarCloud.NET.IProjectsApi.Create(SonarCloud.NET.CreateProjectsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.Create(SonarCloud.NET.CreateProjectsRequest,System.Threading.CancellationToken)
+  id: Create(SonarCloud.NET.CreateProjectsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: Create(CreateProjectsRequest, CancellationToken)
+  nameWithType: IProjectsApi.Create(CreateProjectsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.Create(SonarCloud.NET.CreateProjectsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Create
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 10
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<CreateProjectsResponse> Create(CreateProjectsRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.CreateProjectsRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.CreateProjectsResponse}
+    content.vb: Function Create(request As CreateProjectsRequest, token As CancellationToken = Nothing) As Task(Of CreateProjectsResponse)
+  overload: SonarCloud.NET.IProjectsApi.Create*
+- uid: SonarCloud.NET.IProjectsApi.Delete(SonarCloud.NET.DeleteProjectsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.Delete(SonarCloud.NET.DeleteProjectsRequest,System.Threading.CancellationToken)
+  id: Delete(SonarCloud.NET.DeleteProjectsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: Delete(DeleteProjectsRequest, CancellationToken)
+  nameWithType: IProjectsApi.Delete(DeleteProjectsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.Delete(SonarCloud.NET.DeleteProjectsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Delete
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 11
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task Delete(DeleteProjectsRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.DeleteProjectsRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function Delete(request As DeleteProjectsRequest, token As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IProjectsApi.Delete*
+- uid: SonarCloud.NET.IProjectsApi.Search(SonarCloud.NET.SearchProjectsRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.Search(SonarCloud.NET.SearchProjectsRequest,System.Threading.CancellationToken)
+  id: Search(SonarCloud.NET.SearchProjectsRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: Search(SearchProjectsRequest, CancellationToken)
+  nameWithType: IProjectsApi.Search(SearchProjectsRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.Search(SonarCloud.NET.SearchProjectsRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: Search
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 12
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task<SearchProjectsResponse> Search(SearchProjectsRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.SearchProjectsRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectsResponse}
+    content.vb: Function Search(request As SearchProjectsRequest, token As CancellationToken = Nothing) As Task(Of SearchProjectsResponse)
+  overload: SonarCloud.NET.IProjectsApi.Search*
+- uid: SonarCloud.NET.IProjectsApi.UpdateKey(SonarCloud.NET.UpdateKeyRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.UpdateKey(SonarCloud.NET.UpdateKeyRequest,System.Threading.CancellationToken)
+  id: UpdateKey(SonarCloud.NET.UpdateKeyRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: UpdateKey(UpdateKeyRequest, CancellationToken)
+  nameWithType: IProjectsApi.UpdateKey(UpdateKeyRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.UpdateKey(SonarCloud.NET.UpdateKeyRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: UpdateKey
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 13
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task UpdateKey(UpdateKeyRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.UpdateKeyRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateKey(request As UpdateKeyRequest, token As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IProjectsApi.UpdateKey*
+- uid: SonarCloud.NET.IProjectsApi.UpdateVisibility(SonarCloud.NET.UpdateVisibilityRequest,System.Threading.CancellationToken)
+  commentId: M:SonarCloud.NET.IProjectsApi.UpdateVisibility(SonarCloud.NET.UpdateVisibilityRequest,System.Threading.CancellationToken)
+  id: UpdateVisibility(SonarCloud.NET.UpdateVisibilityRequest,System.Threading.CancellationToken)
+  parent: SonarCloud.NET.IProjectsApi
+  langs:
+  - csharp
+  - vb
+  name: UpdateVisibility(UpdateVisibilityRequest, CancellationToken)
+  nameWithType: IProjectsApi.UpdateVisibility(UpdateVisibilityRequest, CancellationToken)
+  fullName: SonarCloud.NET.IProjectsApi.UpdateVisibility(SonarCloud.NET.UpdateVisibilityRequest, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/SonarCloud.NET/ProjectApi.cs
+      branch: documentation
+      repo: https://github.com/pmdevers/SonarCloud.NET.git
+    id: UpdateVisibility
+    path: src/SonarCloud.NET/ProjectApi.cs
+    startLine: 14
+  assemblies:
+  - SonarCloud.NET
+  namespace: SonarCloud.NET
+  syntax:
+    content: Task UpdateVisibility(UpdateVisibilityRequest request, CancellationToken token = default)
+    parameters:
+    - id: request
+      type: SonarCloud.NET.UpdateVisibilityRequest
+    - id: token
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function UpdateVisibility(request As UpdateVisibilityRequest, token As CancellationToken = Nothing) As Task
+  overload: SonarCloud.NET.IProjectsApi.UpdateVisibility*
+references:
+- uid: SonarCloud.NET
+  commentId: N:SonarCloud.NET
+  href: SonarCloud.html
+  name: SonarCloud.NET
+  nameWithType: SonarCloud.NET
+  fullName: SonarCloud.NET
+  spec.csharp:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+  spec.vb:
+  - uid: SonarCloud
+    name: SonarCloud
+    href: SonarCloud.html
+  - name: .
+  - uid: SonarCloud.NET
+    name: NET
+    href: SonarCloud.NET.html
+- uid: SonarCloud.NET.IProjectsApi.BulkDelete*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.BulkDelete
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_BulkDelete_SonarCloud_NET_BulkDeleteRequest_System_Threading_CancellationToken_
+  name: BulkDelete
+  nameWithType: IProjectsApi.BulkDelete
+  fullName: SonarCloud.NET.IProjectsApi.BulkDelete
+- uid: SonarCloud.NET.BulkDeleteRequest
+  commentId: T:SonarCloud.NET.BulkDeleteRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.BulkDeleteRequest.html
+  name: BulkDeleteRequest
+  nameWithType: BulkDeleteRequest
+  fullName: SonarCloud.NET.BulkDeleteRequest
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: SonarCloud.NET.IProjectsApi.Create*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.Create
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_Create_SonarCloud_NET_CreateProjectsRequest_System_Threading_CancellationToken_
+  name: Create
+  nameWithType: IProjectsApi.Create
+  fullName: SonarCloud.NET.IProjectsApi.Create
+- uid: SonarCloud.NET.CreateProjectsRequest
+  commentId: T:SonarCloud.NET.CreateProjectsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.CreateProjectsRequest.html
+  name: CreateProjectsRequest
+  nameWithType: CreateProjectsRequest
+  fullName: SonarCloud.NET.CreateProjectsRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.CreateProjectsResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.CreateProjectsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<CreateProjectsResponse>
+  nameWithType: Task<CreateProjectsResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.CreateProjectsResponse>
+  nameWithType.vb: Task(Of CreateProjectsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.CreateProjectsResponse)
+  name.vb: Task(Of CreateProjectsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.CreateProjectsResponse
+    name: CreateProjectsResponse
+    href: SonarCloud.NET.CreateProjectsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.CreateProjectsResponse
+    name: CreateProjectsResponse
+    href: SonarCloud.NET.CreateProjectsResponse.html
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: SonarCloud.NET.IProjectsApi.Delete*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.Delete
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_Delete_SonarCloud_NET_DeleteProjectsRequest_System_Threading_CancellationToken_
+  name: Delete
+  nameWithType: IProjectsApi.Delete
+  fullName: SonarCloud.NET.IProjectsApi.Delete
+- uid: SonarCloud.NET.DeleteProjectsRequest
+  commentId: T:SonarCloud.NET.DeleteProjectsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.DeleteProjectsRequest.html
+  name: DeleteProjectsRequest
+  nameWithType: DeleteProjectsRequest
+  fullName: SonarCloud.NET.DeleteProjectsRequest
+- uid: SonarCloud.NET.IProjectsApi.Search*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.Search
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_Search_SonarCloud_NET_SearchProjectsRequest_System_Threading_CancellationToken_
+  name: Search
+  nameWithType: IProjectsApi.Search
+  fullName: SonarCloud.NET.IProjectsApi.Search
+- uid: SonarCloud.NET.SearchProjectsRequest
+  commentId: T:SonarCloud.NET.SearchProjectsRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.SearchProjectsRequest.html
+  name: SearchProjectsRequest
+  nameWithType: SearchProjectsRequest
+  fullName: SonarCloud.NET.SearchProjectsRequest
+- uid: System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectsResponse}
+  commentId: T:System.Threading.Tasks.Task{SonarCloud.NET.SearchProjectsResponse}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<SearchProjectsResponse>
+  nameWithType: Task<SearchProjectsResponse>
+  fullName: System.Threading.Tasks.Task<SonarCloud.NET.SearchProjectsResponse>
+  nameWithType.vb: Task(Of SearchProjectsResponse)
+  fullName.vb: System.Threading.Tasks.Task(Of SonarCloud.NET.SearchProjectsResponse)
+  name.vb: Task(Of SearchProjectsResponse)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: SonarCloud.NET.SearchProjectsResponse
+    name: SearchProjectsResponse
+    href: SonarCloud.NET.SearchProjectsResponse.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: SonarCloud.NET.SearchProjectsResponse
+    name: SearchProjectsResponse
+    href: SonarCloud.NET.SearchProjectsResponse.html
+  - name: )
+- uid: SonarCloud.NET.IProjectsApi.UpdateKey*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.UpdateKey
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_UpdateKey_SonarCloud_NET_UpdateKeyRequest_System_Threading_CancellationToken_
+  name: UpdateKey
+  nameWithType: IProjectsApi.UpdateKey
+  fullName: SonarCloud.NET.IProjectsApi.UpdateKey
+- uid: SonarCloud.NET.UpdateKeyRequest
+  commentId: T:SonarCloud.NET.UpdateKeyRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.UpdateKeyRequest.html
+  name: UpdateKeyRequest
+  nameWithType: UpdateKeyRequest
+  fullName: SonarCloud.NET.UpdateKeyRequest
+- uid: SonarCloud.NET.IProjectsApi.UpdateVisibility*
+  commentId: Overload:SonarCloud.NET.IProjectsApi.UpdateVisibility
+  href: SonarCloud.NET.IProjectsApi.html#SonarCloud_NET_IProjectsApi_UpdateVisibility_SonarCloud_NET_UpdateVisibilityRequest_System_Threading_CancellationToken_
+  name: UpdateVisibility
+  nameWithType: IProjectsApi.UpdateVisibility
+  fullName: SonarCloud.NET.IProjectsApi.UpdateVisibility
+- uid: SonarCloud.NET.UpdateVisibilityRequest
+  commentId: T:SonarCloud.NET.UpdateVisibilityRequest
+  parent: SonarCloud.NET
+  href: SonarCloud.NET.UpdateVisibilityRequest.html
+  name: UpdateVisibilityRequest
+  nameWithType: UpdateVisibilityRequest
+  fullName: SonarCloud.NET.UpdateVisibilityRequest
