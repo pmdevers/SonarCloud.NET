@@ -22,10 +22,3 @@ public class Duplication
         public string Reference { get; set; } = string.Empty;
     }
 }
-
-public class SourceFile
-{
-    public required string Key { get; set; }
-    public required string Name { get; set; }
-    public required string ProjectName { get; set; }
-}
