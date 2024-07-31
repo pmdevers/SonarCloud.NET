@@ -2,9 +2,7 @@
 using Microsoft.Extensions.Logging.Abstractions;
 using SonarCloud.NET.Extensions;
 using SonarCloud.NET.Helpers;
-using System.Net;
 using System.Text.Json;
-using System.Threading;
 
 namespace SonarCloud.NET;
 
@@ -30,6 +28,9 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IComponentsApi Components => new ComponentsApi(this);
     public IDuplicationsApi Duplications => new DuplicationsApi(this);
     public IFavoritesApi Favorites => new FavoritesApi(this);
+    public IHotspotsApi Hotspots => new HotspotsApi(this);
+
+    public IIssuesApi Issues => new IssuesApi(this);
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
     public IProjectsApi Projects => new ProjectsApi(this);
 
