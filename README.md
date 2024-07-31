@@ -11,7 +11,7 @@
 
 This repository contains a .NET Core library for interacting with the SonarCloud API. The library wraps the API endpoints and provides a strongly-typed, easy-to-use interface for making API calls from your .NET applications.
 
-![Alt text](/assets/sonar-dark.png "SonarCloud logo")
+![Alt text](https://raw.githubusercontent.com/pmdevers/SonarCloud.NET/master/assets/sonar-dark.png "SonarCloud logo")
 
 ## Table of Contents
 
