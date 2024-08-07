@@ -13,6 +13,9 @@ public interface ISonarCloudApiClient
     IComponentsApi Components { get; }
     IDuplicationsApi Duplications { get; }
     IFavoritesApi Favorites { get; }
+    IHotspotsApi Hotspots { get; }
+
+    IIssuesApi Issues { get; }
     IProjectTagsApi ProjectTags { get; }
     IProjectsApi Projects { get; }
 }
