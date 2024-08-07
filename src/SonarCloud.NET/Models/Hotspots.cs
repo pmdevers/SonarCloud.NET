@@ -59,7 +59,7 @@ public class Hotspot
     /// assignee identifier
     /// </summary>
     [JsonPropertyName("assignee")]
-    public required string Assignee { get; set; }
+    public string? Assignee { get; set; }
 
     /// <summary>
     /// Name of the Author
