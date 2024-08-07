@@ -79,6 +79,21 @@ foreach(var project in result.Components)
 }
 ```
 
+### For console applications
+
+If you're using writing a script or console application:
+
+```
+public static async Task Main(string[] args) 
+{
+    var sc = new ServiceCollection();
+    sc.AddSonarCloudClient(cfg => cfg.AccessToken = MY_API_KEY);
+    sc.AddLogging();
+    var provider = sc.BuildServiceProvider();
+    var sonarClient = provider.GetService<ISonarCloudApiClient>();
+}
+```
+
 ## Configuration
 
 ### Authentication
