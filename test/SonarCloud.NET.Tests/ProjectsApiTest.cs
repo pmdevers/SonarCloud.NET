@@ -65,9 +65,9 @@ public class ProjectsApiTest
 
             var request = new CreateProjectsRequest()
             {
-                OrganizationKey = "test-key",
-                DisplayName = "Test",
-                ProjectKey = "test",
+                Organization = "test-key",
+                Name = "Test",
+                Project = "test",
             };
 
             var result = await client.Projects.Create(request);

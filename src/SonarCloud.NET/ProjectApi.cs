@@ -104,7 +104,7 @@ public class CreateProjectsRequest
     /// The key of the organization
     /// </summary>
     [QueryString("organization")]
-    public required string OrganizationKey { get; set; }
+    public required string Organization { get; set; }
 
     /// <summary>
     /// Key of the project
@@ -113,7 +113,7 @@ public class CreateProjectsRequest
     /// my_project
     /// </example>
     [QueryString("project")]
-    public required string ProjectKey { get; set; }
+    public required string Project { get; set; }
 
     /// <summary>
     /// Name of the project. If name is longer than 500, it is abbreviated.
@@ -122,7 +122,7 @@ public class CreateProjectsRequest
     /// SonarQube
     /// </example>
     [QueryString("name")]
-    public required string DisplayName { get; set; }
+    public required string Name { get; set; }
 
     [QueryString("newCodeDefinitionType")]
     public string? NewCodeDefinitionType { get; }
