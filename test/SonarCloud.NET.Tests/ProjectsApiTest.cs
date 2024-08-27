@@ -30,7 +30,7 @@ public class ProjectsApiTest
 
             var request = new BulkDeleteRequest()
             {
-                Organization = "test-key"
+                OrganizationKey = "test-key"
             };
             
             await client.Projects.BulkDelete(request);
@@ -65,9 +65,9 @@ public class ProjectsApiTest
 
             var request = new CreateProjectsRequest()
             {
-                Organization = "test-key",
-                Name = "Test",
-                Project = "test",
+                OrganizationKey = "test-key",
+                DisplayName = "Test",
+                ProjectKey = "test",
             };
 
             var result = await client.Projects.Create(request);
@@ -76,11 +76,13 @@ public class ProjectsApiTest
         }
     }
 
+#pragma warning disable S2094 // Classes should not be empty
     public class UpdateVisibility { }
     public class UpdateKey
     {
 
     }
+#pragma warning restore S2094
     public class SearchProjects 
     {
         [Fact]
@@ -105,6 +107,8 @@ public class ProjectsApiTest
         }    
         
     }
+#pragma warning disable S2094
     public class DeleteProjects { }
     public class SearchProejects { }
+#pragma warning restore S2094
 }
