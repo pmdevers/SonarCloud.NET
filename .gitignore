@@ -351,3 +351,5 @@ MigrationBackup/
 _site/
 
 docs/api/
+
+test/**/_NotIncluded_.cs

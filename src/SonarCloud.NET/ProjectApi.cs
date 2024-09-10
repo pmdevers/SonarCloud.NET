@@ -140,18 +140,32 @@ public class CreateProjectsRequest
 }
 public class UpdateVisibilityRequest
 {
-    [QueryString("projects")]
-    public required string Projects { get; set; }
-    
+    /// <summary>
+    /// Project key
+    /// </summary>
+    [QueryString("project")]
+    public required string Project { get; set; }
+
+    /// <summary>
+    /// Whether the project should be visible to everyone, or only specific user/groups.
+    /// </summary>
+    /// <example>private, public</example>
     [QueryString("visibility")]
     public required string Visibility { get; set; }
 }
 
 public class UpdateKeyRequest
 {
+    /// <summary>
+    /// Current project key.
+    /// </summary>
     [QueryString("from")]
     public required string From { get; set; }
 
+
+    /// <summary>
+    /// New project key.
+    /// </summary>
     [QueryString("to")]
     public required string To { get; set; }
 }
@@ -162,8 +176,11 @@ public class SearchProjectsResponse : Paged<Project>
 
 public class DeleteProjectsRequest
 {
-    [QueryString("projects")]
-    public string? Projects { get; set; }
+    /// <summary>
+    /// The project key to delete.
+    /// </summary>
+    [QueryString("project")]
+    public required string Project { get; set; }
 }
 
 public class CreateProjectsResponse
@@ -174,24 +191,51 @@ public class CreateProjectsResponse
 
 public class SearchProjectsRequest
 {
+    /// <summary>
+    /// Filter the projects for which last analysis is older than the given date (exclusive).
+    /// Either a date(server timezone) or datetime can be provided.
+    /// </summary>
     [QueryString("analyzedBefore")]
     public DateTime? AnalyzedBefore { get;set; }
 
+    /// <summary>
+    /// Filter the projects that are provisioned
+    /// </summary>
     [QueryString("onProvisionedOnly")]
     public bool? OnProvisionedOnly { get; set; }
 
+    /// <summary>
+    /// The key of the organization
+    /// </summary>
     [QueryString("organization")]
     public required string Organization { get; set; }
 
+    /// <summary>
+    /// 1-based page number
+    /// </summary>
     [QueryString("p")]
     public int? Page { get; set; }
 
+    /// <summary>
+    /// Comma-separated list of project keys
+    /// </summary>
     [QueryString("projects")]
     public string? Projects { get; set; }
 
+    /// <summary>
+    /// Page size. Must be greater than 0 and less or equal than 500
+    /// </summary>
     [QueryString("ps")]
     public int? PageSize { get; set; }
 
+
+    /// <summary>
+    /// Limit search to:
+    /// <list type="bullet">
+    ///   <item>component names that contain the supplied string</item>
+    ///   <item>component keys that contain the supplied string</item>
+    /// </list>
+    /// </summary>
     [QueryString("q")]
     public string? Query { get; set; }
 }
@@ -207,7 +251,7 @@ internal sealed class ProjectsApi(SonarCloudApiClient client) : IProjectsApi
         => client.Post<CreateProjectsRequest, CreateProjectsResponse>($"{endpoint}/create", request, token);
 
     public Task Delete(DeleteProjectsRequest request, CancellationToken token = default)
-        => client.Post($"{endpoint}/bulk_delete", request, token);
+        => client.Post($"{endpoint}/delete", request, token);
 
     public Task<SearchProjectsResponse> Search(SearchProjectsRequest request, CancellationToken token = default)
         => client.Get<SearchProjectsRequest, SearchProjectsResponse>($"{endpoint}/search", request, token);
