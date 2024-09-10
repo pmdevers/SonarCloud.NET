@@ -108,7 +108,32 @@ public class ProjectsApiTest
         
     }
 #pragma warning disable S2094
-    public class DeleteProjects { }
+    public class DeleteProjects {
+
+        [Fact]
+        public async Task CallsWith_Parameter()
+        {
+            var response = new HttpResponseMessage()
+            {
+                StatusCode = HttpStatusCode.OK,
+            };
+
+            var handler = new RequestValidationHandler((r) =>
+            {
+                r.RequestUri.Should().Be("https://sonarcloud.io/api/projects/delete");
+                return true;
+            }, response);
+
+            var client = TestsHelper.GetClient(handler);
+
+            var request = new DeleteProjectsRequest()
+            {
+                Project = "test",
+            };
+
+            await client.Projects.Delete(request);
+        }
+    }
     public class SearchProejects { }
 #pragma warning restore S2094
 }
