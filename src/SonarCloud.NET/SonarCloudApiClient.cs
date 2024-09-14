@@ -19,6 +19,8 @@ public interface ISonarCloudApiClient
     IProjectTagsApi ProjectTags { get; }
     IProjectsApi Projects { get; }
     IPermissionsApi Permissions { get; }
+
+    IWebServicesApi WebServices { get; }
 }
 
 internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions? options = null, ILogger<SonarCloudApiClient>? logger = null)
@@ -33,11 +35,11 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IDuplicationsApi Duplications => new DuplicationsApi(this);
     public IFavoritesApi Favorites => new FavoritesApi(this);
     public IHotspotsApi Hotspots => new HotspotsApi(this);
-
     public IIssuesApi Issues => new IssuesApi(this);
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
     public IProjectsApi Projects => new ProjectsApi(this);
     public IPermissionsApi Permissions => new PermissionsApi(this);
+    public IWebServicesApi WebServices => new WebServicesApi(this);
 
     public async Task<TResponse> Post<TRequest, TResponse>(string url, TRequest request, CancellationToken token = default)
     {

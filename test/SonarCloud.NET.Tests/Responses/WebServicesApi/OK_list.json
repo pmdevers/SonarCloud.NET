@@ -1,0 +1,107 @@
+{
+    "webServices": [
+        {
+            "path": "api/metric",
+            "description": "Metrics",
+            "actions": [
+                {
+                    "key": "create",
+                    "description": "Create metric",
+                    "deprecatedSince": "5.3",
+                    "internal": false,
+                    "post": true,
+                    "hasResponseExample": true,
+                    "changelog": [
+                        {
+                            "description": "Requires 'Administer System' permission instead of 'Administer Quality Profiles'",
+                            "version": "6.6"
+                        },
+                        {
+                            "description": "Remove database ID from response",
+                            "version": "6.0"
+                        },
+                        {
+                            "description": "Deprecate database ID in response",
+                            "version": "4.5"
+                        }
+                    ],
+                    "params": [
+                        {
+                            "key": "constrained_numeric_param",
+                            "required": false,
+                            "internal": false,
+                            "maximumValue": 12
+                        },
+                        {
+                            "key": "constrained_string_param",
+                            "required": false,
+                            "internal": false,
+                            "maximumLength": 64,
+                            "minimumLength": 3
+                        },
+                        {
+                            "key": "name",
+                            "required": false,
+                            "internal": false
+                        },
+                        {
+                            "key": "severity",
+                            "description": "Severity",
+                            "required": false,
+                            "internal": false,
+                            "defaultValue": "BLOCKER",
+                            "exampleValue": "INFO",
+                            "deprecatedSince": "5.2",
+                            "deprecatedKey": "old_severity",
+                            "deprecatedKeySince": "4.6",
+                            "possibleValues": [
+                                "BLOCKER",
+                                "INFO"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "show",
+                    "internal": false,
+                    "post": false,
+                    "hasResponseExample": true
+                }
+            ]
+        },
+        {
+            "path": "api/webservices",
+            "description": "Get information on the web api supported on this instance.",
+            "actions": [
+                {
+                    "key": "list",
+                    "description": "List web services",
+                    "internal": false,
+                    "post": false,
+                    "hasResponseExample": true
+                },
+                {
+                    "key": "response_example",
+                    "description": "Display web service response example",
+                    "internal": false,
+                    "post": false,
+                    "hasResponseExample": true,
+                    "params": [
+                        {
+                            "key": "action",
+                            "required": true,
+                            "description": "Action of the web service",
+                            "exampleValue": "search"
+                        },
+                        {
+                            "key": "controller",
+                            "required": true,
+                            "description": "Controller of the web service",
+                            "exampleValue": "api/issues"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
