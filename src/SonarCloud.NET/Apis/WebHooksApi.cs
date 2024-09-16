@@ -80,23 +80,32 @@ public class UpdateWebhookRequest
 
 public class UpdateWebhookResponse
 {
+    
 }
 
 public class GetWebhooksListRequest
 {
+    [QueryString("organization")]
+    public required string Organization { get; set; }
+    [QueryString("project")]
+    public string? Project { get; set; }
 }
 
 public class GetWebhooksListResponse
 {
+    [JsonPropertyName("webhooks")]
+    public Webhook[] Webhooks { get; set; } = [];
 }
+
 
 public class GetWebhooksDeliveryRequest
 {
+    [QueryString("deliveryId")]
+    public required string DeliveryId { get; set; }
 }
 
 public class GetWebhookDeliveryResponse
 {
-
     public Delivery? Delivery { get; set; }
 }
 
