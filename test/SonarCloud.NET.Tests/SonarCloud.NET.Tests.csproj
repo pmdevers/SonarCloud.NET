@@ -7,4 +7,11 @@
     <EmbeddedResource Include="Responses\**\*.json" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Responses\WebhooksApi\OK_create.json" />
+    <None Remove="Responses\WebhooksApi\OK_Deliveries.json" />
+    <None Remove="Responses\WebhooksApi\OK_delivery.json" />
+    <None Remove="Responses\WebhooksApi\OK_list.json" />
+  </ItemGroup>
+
 </Project>
