@@ -1,4 +1,5 @@
-﻿using SonarCloud.NET.Tests.Helper;
+﻿using SonarCloud.NET.Apis;
+using SonarCloud.NET.Tests.Helper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,13 +77,11 @@ public class ProjectsApiTest
         }
     }
 
-#pragma warning disable S2094 // Classes should not be empty
     public class UpdateVisibility { }
     public class UpdateKey
     {
 
     }
-#pragma warning restore S2094
     public class SearchProjects 
     {
         [Fact]
@@ -107,7 +106,6 @@ public class ProjectsApiTest
         }    
         
     }
-#pragma warning disable S2094
     public class DeleteProjects {
 
         [Fact]
@@ -135,5 +133,4 @@ public class ProjectsApiTest
         }
     }
     public class SearchProejects { }
-#pragma warning restore S2094
 }
