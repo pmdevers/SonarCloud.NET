@@ -1,4 +1,5 @@
-﻿using SonarCloud.NET.Tests.Helper;
+﻿using SonarCloud.NET.Apis;
+using SonarCloud.NET.Tests.Helper;
 using System.Net;
 
 namespace SonarCloud.NET.Tests;
