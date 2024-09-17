@@ -21,7 +21,10 @@ public interface ISonarCloudApiClient
     IProjectsApi Projects { get; }
     IPermissionsApi Permissions { get; }
     IUserTokensApi UserTokens { get; }
+
+    IUserGroupsApi UserGroups { get; }
     IUsersApi Users { get; }
+    
     IWebHooksApi Webhooks { get; }
     IWebServicesApi WebServices { get; }
 }
@@ -43,6 +46,7 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IProjectsApi Projects => new ProjectsApi(this);
     public IPermissionsApi Permissions => new PermissionsApi(this);
     public IUserTokensApi UserTokens => new UserTokensApi(this);
+    public IUserGroupsApi UserGroups => new UserGroupsApi(this);
     public IUsersApi Users => new UsersApi(this);
     public IWebHooksApi Webhooks => new WebhooksApi(this);
     public IWebServicesApi WebServices => new WebServicesApi(this);
