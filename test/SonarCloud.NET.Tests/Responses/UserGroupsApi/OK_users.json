@@ -1,0 +1,17 @@
+{
+    "users": [
+        {
+            "login": "admin",
+            "name": "Administrator",
+            "selected": true
+        },
+        {
+            "login": "george.orwell",
+            "name": "George Orwell",
+            "selected": true
+        }
+    ],
+    "p": 1,
+    "ps": 25,
+    "total": 2
+}

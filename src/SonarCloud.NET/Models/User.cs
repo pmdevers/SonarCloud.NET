@@ -8,6 +8,7 @@ public class User
     public required string Login { get; set; }
     [JsonPropertyName("name")]
     public required string Name { get; set; }
+
     [JsonPropertyName("active")]
     public required bool Active { get; set; }
 
