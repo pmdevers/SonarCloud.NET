@@ -8,6 +8,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Responses\UserTokensApi\OK_generate.json" />
+    <None Remove="Responses\UserTokensApi\OK_search.json" />
     <None Remove="Responses\WebhooksApi\OK_create.json" />
     <None Remove="Responses\WebhooksApi\OK_Deliveries.json" />
     <None Remove="Responses\WebhooksApi\OK_delivery.json" />
