@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
     <ProjectReference Include="..\..\src\SonarCloud.NET\SonarCloud.NET.csproj" />
   </ItemGroup>
@@ -10,6 +10,8 @@
   <ItemGroup>
     <None Remove="Responses\UserTokensApi\OK_generate.json" />
     <None Remove="Responses\UserTokensApi\OK_search.json" />
+    <None Remove="Responses\UsersApi\OK_groups.json" />
+    <None Remove="Responses\UsersApi\OK_search.json" />
     <None Remove="Responses\WebhooksApi\OK_create.json" />
     <None Remove="Responses\WebhooksApi\OK_Deliveries.json" />
     <None Remove="Responses\WebhooksApi\OK_delivery.json" />
