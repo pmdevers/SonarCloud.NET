@@ -70,10 +70,7 @@ public class WebhooksApiTests
             var client = TestsHelper.GetClient(handler);
 
 
-            var result = await client.Webhooks.GetDeliveries(new()
-            {
-                
-            });
+            var result = await client.Webhooks.GetDeliveries(new());
 
             result.Paging.Index.Should().Be(1);
             result.Deliveries.Should().HaveCount(1);

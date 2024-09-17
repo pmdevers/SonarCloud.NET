@@ -1,11 +1,8 @@
 ﻿using SonarCloud.NET.Apis;
 using SonarCloud.NET.Tests.Helper;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+
+#pragma warning disable S2094 // Classes should not be empty
 
 namespace SonarCloud.NET.Tests;
 public class ProjectsApiTest
@@ -77,7 +74,10 @@ public class ProjectsApiTest
         }
     }
 
+
+
     public class UpdateVisibility { }
+
     public class UpdateKey
     {
 
