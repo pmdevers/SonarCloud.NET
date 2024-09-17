@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Abstractions;
 using SonarCloud.NET.Apis;
 using SonarCloud.NET.Extensions;
@@ -20,7 +20,7 @@ public interface ISonarCloudApiClient
     IProjectTagsApi ProjectTags { get; }
     IProjectsApi Projects { get; }
     IPermissionsApi Permissions { get; }
-
+    IUserTokensApi UserTokens { get; }
     IUsersApi Users { get; }
     IWebHooksApi Webhooks { get; }
     IWebServicesApi WebServices { get; }
@@ -42,6 +42,7 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
     public IProjectsApi Projects => new ProjectsApi(this);
     public IPermissionsApi Permissions => new PermissionsApi(this);
+    public IUserTokensApi UserTokens => new UserTokensApi(this);
     public IUsersApi Users => new UsersApi(this);
     public IWebHooksApi Webhooks => new WebhooksApi(this);
     public IWebServicesApi WebServices => new WebServicesApi(this);

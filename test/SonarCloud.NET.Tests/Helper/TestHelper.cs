@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json;
 
 namespace SonarCloud.NET.Tests.Helper;
-public class TestsHelper
+public static class TestsHelper
 {
     private static readonly JsonSerializerOptions options = new()
     {
