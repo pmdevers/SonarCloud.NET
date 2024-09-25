@@ -7,18 +7,4 @@
     <EmbeddedResource Include="Responses\**\*.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Responses\UserGroupsApi\OK_create.json" />
-    <None Remove="Responses\UserGroupsApi\OK_search.json" />
-    <None Remove="Responses\UserGroupsApi\OK_users.json" />
-    <None Remove="Responses\UserTokensApi\OK_generate.json" />
-    <None Remove="Responses\UserTokensApi\OK_search.json" />
-    <None Remove="Responses\UsersApi\OK_groups.json" />
-    <None Remove="Responses\UsersApi\OK_search.json" />
-    <None Remove="Responses\WebhooksApi\OK_create.json" />
-    <None Remove="Responses\WebhooksApi\OK_Deliveries.json" />
-    <None Remove="Responses\WebhooksApi\OK_delivery.json" />
-    <None Remove="Responses\WebhooksApi\OK_list.json" />
-  </ItemGroup>
-
 </Project>
