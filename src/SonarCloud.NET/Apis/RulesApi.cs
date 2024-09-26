@@ -80,10 +80,81 @@ public class RulesShowResponse
 
 public class RulesSearchRequest
 {
+
 }
 
 public class RulesSearchResponse
 {
+    [QueryString("activation")]
+    public bool? Activation { get; init; }
+
+    [QueryString("active_severities")]
+    public string? ActiveSeverities { get; init; }
+
+    [QueryString("asc")]
+    public bool? Ascending { get; set; }
+
+    [QueryString("available_since")]
+    public DateOnly? AvailableSince { get; init; }
+
+    [QueryString("cleanCodeAttributeCategories")]
+    public string? CleanCodeAttributeCategories { get; init; }
+
+    [QueryString("cwe")]
+    public string? CWEIdentifiers { get; init; }
+
+    [QueryString("f")]
+    public string? Fields { get; init; }
+
+    [QueryString("facets")]
+    public string? Facets { get; init; }
+
+    [QueryString("impactSeverities")]
+    public string? ImpactSeverities { get; init; }
+
+    [QueryString("impactSoftwareQualities")]
+    public string? ImpactSoftwareQualities { get; init; }
+
+    [QueryString("include_external")]
+    public bool? IncludeExternal { get; init; }
+
+    [QueryString("inheritance")]
+    public string? Inheritence { get; init; }
+
+    [QueryString("is_template")]
+    public bool? IsTemplate { get; init; }
+
+    [QueryString("languages")]
+    public string? Languages { get; init; }
+
+    [QueryString("organization")]
+    public string? Organization { get; init; }
+
+    [QueryString("owaspTop10")]
+    public string? OwaspTop10 { get; init; }
+
+    [QueryString("p")]
+    public int? PageNumber { get; init; }
+
+    [QueryString("ps")]
+    public int? PageSize { get; init; }
+
+    [QueryString("q")]
+    public string? Query { get; init; }
+
+    [QueryString("qprofile")]
+    public string? QualityProfile { get; init; }
+
+    [QueryString("repositories")]
+    public string? Repositories { get; init; }
+
+    [QueryString("rule_key")]
+    public string? RuleKey { get; init; }
+
+    [QueryString("rule_keys")]
+    public string? RuleKeys { get; init; }
+
+
 }
 
 public class RulesRepositoriesRequest
