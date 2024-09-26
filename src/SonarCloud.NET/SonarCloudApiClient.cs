@@ -20,6 +20,7 @@ public interface ISonarCloudApiClient
     IProjectTagsApi ProjectTags { get; }
     IProjectsApi Projects { get; }
     IPermissionsApi Permissions { get; }
+    IRulesApi Rules { get; }
     ISourcesApi Sources { get; }
     ISettingsApi Settings { get; }
     IUserTokensApi UserTokens { get; }
@@ -31,7 +32,7 @@ public interface ISonarCloudApiClient
     IWebServicesApi WebServices { get; }
 }
 
-internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions? options = null, ILogger<SonarCloudApiClient>? logger = null)
+internal sealed class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions? options = null, ILogger<SonarCloudApiClient>? logger = null)
     : ISonarCloudApiClient
 {
     public HttpClient HttpClient { get; } = client;
@@ -47,7 +48,7 @@ internal class SonarCloudApiClient(HttpClient client, SonarCloudApiClientOptions
     public IProjectTagsApi ProjectTags => new ProjectTagsApi(this);
     public IProjectsApi Projects => new ProjectsApi(this);
     public IPermissionsApi Permissions => new PermissionsApi(this);
-
+    public IRulesApi Rules => new RulesApi(this);
     public ISourcesApi Sources => new SourcesApi(this);
     public ISettingsApi Settings => new SettingsApi(this);
     public IUserTokensApi UserTokens => new UserTokensApi(this);
