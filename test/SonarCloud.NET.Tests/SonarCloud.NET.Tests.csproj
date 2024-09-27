@@ -7,12 +7,4 @@
     <EmbeddedResource Include="Responses\**\*.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Responses\RulesApi\OK_repositories.json" />
-    <None Remove="Responses\RulesApi\OK_search.json" />
-    <None Remove="Responses\RulesApi\OK_show.json" />
-    <None Remove="Responses\RulesApi\OK_tags.json" />
-    <None Remove="Responses\RulesApi\OK_update.json" />
-  </ItemGroup>
-
 </Project>
